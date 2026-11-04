@@ -6,7 +6,7 @@ On 20 April 2020 the expiring May 2020 WTI crude oil futures contract settled at
 - `oil.py`: the scenes (barrel and price board, traffic and storage tanks, contract, seller and buyer, barrel pile and garage). It reuses `../molasses-flood` (grade, captions) and `../zanzibar-war` (headline, backgrounds, caption timing).
 - `audio_oil.py`: music, sound effects and voice mix, built with the synths in `../molasses-flood/audio.py`. All audio is original and synthesized.
 
-Narration: Kokoro TTS, voice `am_onyx`. Lines `l1`–`l7` are listed in `oil.py`.
+Narration: Kokoro TTS, voice `am_onyx`. Lines `l1`–`l6` are listed in `oil.py`.
 
 ```bash
 OT_FONTS=/path/to/fonts python3 oil.py video.mp4

@@ -19,8 +19,8 @@ import episode as zw  # zanzibar-war: headline(), dark_bg(), paper_bg(), build_c
 AMBER = mf.AMBER
 RED = (225, 70, 50)
 MINUS = "-"  # ASCII hyphen: renders in every bundled font
-NARR = {"l1": 0.1, "l2": 3.0, "l3": 7.0, "l4": 12.3, "l5": 15.6, "l6": 18.2, "l7": 19.15}
-DUR = {"l1": 2.66, "l2": 3.73, "l3": 5.05, "l4": 2.38, "l5": 2.09, "l6": 0.75, "l7": 0.52}
+NARR = {"l1": 0.1, "l2": 3.0, "l3": 7.0, "l4": 12.3, "l5": 15.6, "l6": 18.2}
+DUR = {"l1": 2.66, "l2": 3.73, "l3": 5.05, "l4": 2.38, "l5": 2.09, "l6": 0.75}
 LINES = [
     ("l1", [["OIL", "ONCE", "GOT", "SO", "CHEAP,"], ["SELLERS", "PAID", "BUYERS."]]),
     ("l2", [["IN", "APRIL", "2020,"], ["DEMAND", "CRASHED,"], ["AND", "AVAILABLE", "STORAGE"], ["WAS", "SCARCE."]]),
@@ -28,12 +28,11 @@ LINES = [
     ("l4", [["BUYERS", "WERE", "BEING", "PAID"], ["TO", "TAKE", "ON", "DELIVERY."]]),
     ("l5", [["YOUR", "GARAGE"], ["WAS", "NOT", "THE", "SOLUTION."]]),
     ("l6", [["NO", "WAY."]]),
-    ("l7", [["YEP."]]),
 ]
 zw.LINES, zw.NARR, zw.DUR = LINES, NARR, DUR
 zw.SPOKEN = {"2020,": "twenty twenty", "$37": "thirty seven dollars", "U.S.": "you ess"}
 mf.CHUNKS = zw.build_chunks()
-mf.KEYWORDS = {"CHEAP,", "PAID", "CRASHED,", "SCARCE.", "FUTURES", "NEGATIVE", "$37", "DELIVERY.", "GARAGE", "WAY.", "YEP."}
+mf.KEYWORDS = {"CHEAP,", "PAID", "CRASHED,", "SCARCE.", "FUTURES", "NEGATIVE", "$37", "DELIVERY.", "GARAGE", "WAY."}
 
 
 # ---------------------------------------------------------------- drawing helpers

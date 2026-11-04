@@ -8,7 +8,7 @@ from scipy import signal
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "molasses-flood"))
 import audio as A  # noqa: E402
 
-NARR = {"l1": 0.1, "l2": 3.0, "l3": 7.0, "l4": 12.3, "l5": 15.6, "l6": 18.2, "l7": 19.15}
+NARR = {"l1": 0.1, "l2": 3.0, "l3": 7.0, "l4": 12.3, "l5": 15.6, "l6": 18.2}
 
 
 def coin(level=1.0):
