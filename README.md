@@ -12,3 +12,9 @@ Short vertical videos (9:16, 1080×1920) about true stories that sound made up.
 | #7 He Sold the Eiffel Tower. He Didn't Own It. (1925) | [`eiffel-con/no-way-07-eiffel-con.mp4`](eiffel-con/no-way-07-eiffel-con.mp4) |
 
 Each episode folder holds the finished MP4 plus the code that renders it.
+
+## Skits
+
+| Skit | Video |
+|---|---|
+| The Detailer's Worst Nightmare (30s) | [`skit-detailer/no-way-detailers-worst-nightmare.mp4`](skit-detailer/no-way-detailers-worst-nightmare.mp4) |
