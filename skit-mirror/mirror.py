@@ -1,4 +1,4 @@
-"""NO WAY. skit — Mirror Check (25s, 1080x1920, 30 fps).
+"""NO WAY. skit — Mirror Check (30s, 1080x1920, 30 fps).
 A guy at the bathroom mirror, slowly suspecting his hair is thinning. Reuses the detailer skit's face rig,
 lip-sync envelopes, captions and fonts (skit-detailer/skit.py)."""
 import os
@@ -16,30 +16,30 @@ from common import W, H, font, to_img, from_img, cam2d, shake, lerp, smoothstep,
 import skit as sk  # noqa: E402  face rig, captions, lip-sync
 
 FPS = 30
-DURATION = 25.0
+DURATION = 30.0
 NFR = int(FPS * DURATION)
-CUT_T = 24.45
+CUT_T = 29.3
 
 sk.NFR = NFR
 sk.OUTRO_T = CUT_T
 sk.VOICE_DIR = os.environ.get("SKIT_VOICES", os.path.join(HERE, "voices"))
 # speaker "D" = the guy (white captions, lip-synced); "F" = the barber on the phone (blue captions)
 sk.LINES = [
-    ("g1", "D", 1.6, [["YEAH…"], ["IT'S", "GETTIN'", "REAL"], ["LIGHT,", "MY", "BOY."]]),
-    ("g2", "D", 5.3, [["EITHER", "A", "BAD"], ["HAIRCUT,", "OR…"]]),
-    ("g3", "D", 10.3, [["NAH."], ["THAT'S", "DEFINITELY"], ["THE", "LIGHTING."]]),
-    ("g4", "D", 13.0, [["…LIGHTING", "KINDA"], ["GOT", "A", "POINT,"], ["THOUGH."]]),
-    ("g5", "D", 15.9, [["BE", "HONEST."], ["WHEN", "YOU", "SAID"], ["“TAKE", "A", "LITTLE"], ["OFF", "THE", "TOP”…"],
+    ("g1", "D", 1.8, [["YEAH…"], ["IT'S", "GETTIN'", "REAL"], ["LIGHT,", "MY", "BOY."]]),
+    ("g2", "D", 5.6, [["EITHER", "A", "BAD"], ["HAIRCUT,", "OR…"]]),
+    ("g3", "D", 11.4, [["NAH."], ["THAT'S", "DEFINITELY"], ["THE", "LIGHTING."]]),
+    ("g4", "D", 15.6, [["…LIGHTING", "KINDA"], ["GOT", "A", "POINT,"], ["THOUGH."]]),
+    ("g5", "D", 19.6, [["BE", "HONEST."], ["WHEN", "YOU", "SAID"], ["“TAKE", "A", "LITTLE"], ["OFF", "THE", "TOP”…"],
                        ["WAS", "THAT", "YOU"], ["OR", "GOD?"]]),
-    ("b1", "F", 20.6, [["SEND", "ME", "A", "PICTURE."]]),
-    ("g6", "D", 22.7, [["WE", "CAN", "DISCUSS"], ["IT", "VERBALLY."]]),
+    ("b1", "F", 24.7, [["SEND", "ME", "A", "PICTURE."]]),
+    ("g6", "D", 27.4, [["WE", "CAN", "DISCUSS"], ["IT", "VERBALLY."]]),
 ]
 sk.SPOKEN = {}
 sk.KEYWORDS = {"LIGHT,", "HAIRCUT,", "OR…", "DEFINITELY", "LIGHTING.", "POINT,", "GOD?", "PICTURE.", "VERBALLY."}
 
-LIGHT_OFF, LIGHT_ON = 10.15, 12.85
-RING_T, ANSWER_T = 15.0, 15.7
-RAISE_T, LOWER_T = 21.75, 22.55
+LIGHT_OFF, LIGHT_ON = 10.9, 14.4
+RING_T, ANSWER_T = 18.4, 19.2
+RAISE_T, LOWER_T = 26.0, 27.0
 BG = None
 
 
@@ -70,7 +70,7 @@ def guy(t, rub=0.0, squint=0.0, look_x=0.0, defeat=0.0, phone=0.0):
     d = ImageDraw.Draw(lay)
     cx, cy, s = W / 2, 820, 1.0
     mouth = sk.MOUTH[min(NFR - 1, int(t * FPS))]
-    sk.face(d, cx, cy, s, mouth, sk.blink_at(t), mood=min(1.0, 0.15 + 0.5 * squint + defeat), look=0.0)
+    sk.face(d, cx, cy, s, mouth, sk.blink_at(t), mood=min(1.0, 0.15 + 0.5 * squint + defeat), look=0.0, beard=False)
     # grey crew-neck tee over the work shirt
     d.polygon([(cx - 420, cy + 900), (cx - 380, cy + 520), (cx - 120, cy + 400), (cx + 120, cy + 400),
                (cx + 380, cy + 520), (cx + 420, cy + 900)], fill=TEE)
@@ -116,9 +116,9 @@ def guy(t, rub=0.0, squint=0.0, look_x=0.0, defeat=0.0, phone=0.0):
 def head_pose(t):
     """(rotation deg, x shift, lean zoom) for the reflection layer."""
     rot = 0.0
-    if 5.0 <= t < 7.6:                                 # checks another angle
-        rot = 14 * ease_in_out((t - 5.0) / 0.6) * (1 - ease_in_out((t - 7.0) / 0.6))
-    lean = 0.08 * ease_in_out(t / 1.4) if t < 15 else 0.0
+    if 5.0 <= t < 7.8:                                 # checks another angle
+        rot = 14 * ease_in_out((t - 5.0) / 0.6) * (1 - ease_in_out((t - 7.2) / 0.6))
+    lean = 0.08 * ease_in_out(t / 1.4) if t < 18.4 else 0.0
     return rot, lean
 
 
@@ -153,10 +153,10 @@ def frame_image(t):
         k = ease_out((t - RAISE_T - 0.15) / 0.25)
         return phone_cam(t), lerp(1.15, 1.0, k), (W / 2, H / 2), 1.0, 1.0
     img = BG.copy().convert("RGBA")
-    rub = 1.0 if t < 7.2 else 0.0
-    squint = smoothstep(0.8, 1.6, t) * (1 - smoothstep(4.4, 5.0, t)) + smoothstep(13.0, 13.6, t) * 0.4
-    look_x = 0.7 * smoothstep(5.2, 5.6, t) * (1 - smoothstep(6.9, 7.3, t))
-    defeat = 0.5 * smoothstep(7.4, 8.4, t) * (1 - smoothstep(10.0, 10.3, t)) + 0.6 * smoothstep(13.0, 13.4, t)
+    rub = 1.0 if t < 7.6 else 0.0
+    squint = smoothstep(0.8, 1.6, t) * (1 - smoothstep(4.4, 5.0, t)) + smoothstep(14.6, 15.2, t) * 0.4
+    look_x = 0.7 * smoothstep(5.2, 5.6, t) * (1 - smoothstep(7.1, 7.5, t))
+    defeat = 0.5 * smoothstep(7.8, 8.8, t) * (1 - smoothstep(10.6, 10.9, t)) + 0.6 * smoothstep(14.6, 15.0, t)
     phone = 1.0 if ANSWER_T <= t < RAISE_T else 0.0
     lay = guy(t, rub, squint, look_x, defeat, phone)
     rot, lean = head_pose(t)
@@ -166,7 +166,7 @@ def frame_image(t):
     d = ImageDraw.Draw(img, "RGBA")
     d.rectangle([0, 0, W, H], outline=(150, 150, 150, 255), width=26)                     # mirror edge
     # slow push toward the mirror, with a held extra push on the long stare
-    z = 1.0 + lean + 0.012 * t + 0.12 * ease_in_out((t - 7.4) / 2.4) * (t < 10.2)
+    z = 1.0 + lean + 0.012 * t + 0.12 * ease_in_out((t - 7.8) / 2.6) * (t < 10.9)
     if t >= LOWER_T:
         z = 1.25 + 0.02 * (t - LOWER_T)
     return img.convert("RGB"), z, (W / 2, 760), 0.8, light_level(t)

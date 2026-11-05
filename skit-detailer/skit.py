@@ -154,7 +154,7 @@ EXTRA_SAND = [(SAND_RNG.uniform(200, 880), SAND_RNG.uniform(700, 1250), SAND_RNG
 SKIN, SKIN_D, HAIR, SHIRT = (196, 146, 110), (160, 112, 82), (38, 28, 22), (24, 24, 26)
 
 
-def face(d, cx, cy, s, mouth, blink, mood=0.0, look=0.0):
+def face(d, cx, cy, s, mouth, blink, mood=0.0, look=0.0, beard=True):
     """Front-facing close-up. mouth 0..1, blink 0..1, mood 0 tired .. 1 defeated, look -1..1 (eyes down = +)."""
     # shoulders + black work shirt
     d.polygon([(cx - 420 * s, cy + 900 * s), (cx - 380 * s, cy + 520 * s), (cx - 120 * s, cy + 400 * s),
@@ -168,8 +168,9 @@ def face(d, cx, cy, s, mouth, blink, mood=0.0, look=0.0):
         d.ellipse([cx + sx * 215 * s - 40 * s, cy - 40 * s, cx + sx * 215 * s + 40 * s, cy + 90 * s], fill=SKIN)
     d.ellipse([cx + 200 * s, cy + 10 * s, cx + 236 * s, cy + 46 * s], fill=(245, 245, 245))                        # earbud
     # stubble / beard shadow
-    d.chord([cx - 215 * s, cy - 40 * s, cx + 215 * s, cy + 340 * s], 0, 180, fill=(150, 108, 80))
-    d.ellipse([cx - 150 * s, cy + 40 * s, cx + 150 * s, cy + 240 * s], fill=SKIN)
+    if beard:
+        d.chord([cx - 215 * s, cy - 40 * s, cx + 215 * s, cy + 340 * s], 0, 180, fill=(150, 108, 80))
+        d.ellipse([cx - 150 * s, cy + 40 * s, cx + 150 * s, cy + 240 * s], fill=SKIN)
     # hair (short fade)
     d.chord([cx - 235 * s, cy - 320 * s, cx + 235 * s, cy + 40 * s], 180, 360, fill=HAIR)
     d.rectangle([cx - 236 * s, cy - 150 * s, cx - 205 * s, cy - 20 * s], fill=HAIR)

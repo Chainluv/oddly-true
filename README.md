@@ -18,4 +18,4 @@ Each episode folder holds the finished MP4 plus the code that renders it.
 | Skit | Video |
 |---|---|
 | The Detailer's Worst Nightmare (30s) | [`skit-detailer/no-way-detailers-worst-nightmare.mp4`](skit-detailer/no-way-detailers-worst-nightmare.mp4) |
-| Mirror Check (25s) | [`skit-mirror/no-way-mirror-check.mp4`](skit-mirror/no-way-mirror-check.mp4) |
+| Mirror Check (30s) | [`skit-mirror/no-way-mirror-check.mp4`](skit-mirror/no-way-mirror-check.mp4) |
