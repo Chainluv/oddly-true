@@ -21,3 +21,9 @@ Each episode folder holds the finished MP4 plus the code that renders it.
 |---|---|
 | The Detailer's Worst Nightmare (30s) | [`skit-detailer/no-way-detailers-worst-nightmare.mp4`](skit-detailer/no-way-detailers-worst-nightmare.mp4) |
 | Mirror Check (30s) | [`skit-mirror/no-way-mirror-check.mp4`](skit-mirror/no-way-mirror-check.mp4) |
+
+## Music videos
+
+| Video | File |
+|---|---|
+| The Beat Builds Itself (45s) | [`beat-builds/the-beat-builds-itself.mp4`](beat-builds/the-beat-builds-itself.mp4) |
