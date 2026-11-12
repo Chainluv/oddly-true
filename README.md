@@ -12,6 +12,7 @@ Short vertical videos (9:16, 1080×1920) about true stories that sound made up.
 | #7 He Sold the Eiffel Tower. He Didn't Own It. (1925) | [`eiffel-con/no-way-07-eiffel-con.mp4`](eiffel-con/no-way-07-eiffel-con.mp4) |
 | America Sent Troops Against Its Own Veterans (1932, 65s) | [`bonus-army/no-way-bonus-army.mp4`](bonus-army/no-way-bonus-army.mp4) |
 | He Died One Minute Before the Ceasefire (1918, 65s) | [`gunther-1059/no-way-gunther-1059.mp4`](gunther-1059/no-way-gunther-1059.mp4) |
+| Your Selfie Camera Has a NASA Origin Story (61s) | [`nasa-selfie/no-way-nasa-selfie.mp4`](nasa-selfie/no-way-nasa-selfie.mp4) |
 
 Each episode folder holds the finished MP4 plus the code that renders it.
 
