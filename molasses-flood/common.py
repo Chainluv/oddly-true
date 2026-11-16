@@ -3,7 +3,8 @@ import os
 import numpy as np
 from PIL import Image, ImageFilter, ImageFont
 
-W, H = 1080, 1920
+# frame size: portrait shorts by default; long-form sets OT_W/OT_H (e.g. 1920x1080) before importing
+W, H = int(os.environ.get("OT_W", 1080)), int(os.environ.get("OT_H", 1920))
 FPS = 30
 DUR = 20.0
 NFRAMES = int(FPS * DUR)
