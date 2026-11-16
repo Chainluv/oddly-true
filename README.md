@@ -30,3 +30,9 @@ Each episode folder holds the finished MP4 plus the code that renders it.
 | Video | File |
 |---|---|
 | The Beat Builds Itself (45s) | [`beat-builds/the-beat-builds-itself.mp4`](beat-builds/the-beat-builds-itself.mp4) |
+
+## News
+
+| Story | Video |
+|---|---|
+| He Quit. Now a Comeback? — Jensen Huang / Nvidia (reported Nov 16, 2026, 45s) | [`huang-comeback/no-way-huang-comeback.mp4`](huang-comeback/no-way-huang-comeback.mp4) |
