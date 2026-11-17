@@ -147,7 +147,7 @@ def build(out):
 
     # music level automation: dip for the death toll, settle under the mid-roll beat
     t = A.T(N)
-    auto = np.interp(t, [0, P["r4"]["start"] - 0.5, P["r4"]["start"], end("r4") + 1.5, end("r4") + 3.0, DUR],
+    auto = np.interp(t, [0, P["r4"]["start"] - 0.5, P["r4"]["start"], end("r6") + 1.0, end("r6") + 2.5, DUR],
                      [1, 1, 0.5, 0.5, 1, 1])
     music *= auto[:, None]
 

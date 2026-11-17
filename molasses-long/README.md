@@ -1,15 +1,15 @@
 # NO WAY. — The Great Molasses Flood (long form, ~8:20)
 
-`no-way-molasses-flood-long.mp4`: 1920×1080 (16:9), 30 fps, H.264/AAC, −14 LUFS, 8:21.
+`no-way-molasses-flood-long.mp4`: 1920×1080 (16:9), 30 fps, H.264/AAC, −14 LUFS, 8:07.
 `no-way-molasses-flood-long.srt`: subtitle file to upload to YouTube as captions (the video also has burned-in subtitles).
 
 Built from Derrick's 8-minute script, with these edits:
 - **Fact fixes.** The unsourced ladder anecdote is replaced with the documented firehouse rescue (rescuers spent hours cutting through floorboards). "Some victims weren't found for months" now says one victim wasn't found for nearly four months (Cesare Nicolo).
 - **Ending.** The video ends on "No way." per `CLAUDE.md`, and the outro call to action is generic ("watch another one next").
-- **Chapters.** Each section opens with a chapter card (PART 1–7). Together with a storytelling-paced voice (0.78×), this brings the runtime to about 8:20.
+- **Pacing (v2).** The voice runs at a natural 0.88× with short pauses and 1.6s chapter cards. The extra length comes from added verified facts instead of slowness: the open loop about blaming anarchists, the walls being under an inch thick and too brittle, Prohibition ratified the next day, Engine 31 and firefighter George Layhe, molasses about 4× thicker in the cold, the two ten-year-old victims, the fireboat cleanup, and auditor Hugh Ogden's 1925 report. It also adds re-hooks between chapters and a 15-second end-screen hold.
 
 Chapter start times for the YouTube description (from `timeline.json`):
-0:00 Cold open · 0:31 Title · 0:34 The Tank · 2:02 The Perfect Storm · 3:05 The Wave · 4:14 The Trap · 5:11 The Cleanup · 5:45 The Blame Game · 7:02 The Legacy · 7:46 Outro
+0:00 Cold open · 0:29 Title · 0:31 The Tank · 1:53 The Perfect Storm · 2:57 The Wave · 4:09 The Trap · 5:08 The Cleanup · 5:45 The Blame Game · 6:54 The Legacy · 7:28 Outro
 
 ## Files
 

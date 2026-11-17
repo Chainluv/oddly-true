@@ -296,7 +296,7 @@ def s_title(t, L):
 def s_chapter(t, L, title, n):
     img = base()
     d = ImageDraw.Draw(img, "RGBA")
-    a = int(255 * fade_in(L, 0.0, 0.35) * (1 - smoothstep(2.25, 2.6, L)))
+    a = int(255 * fade_in(L, 0.0, 0.3) * (1 - smoothstep(1.3, 1.6, L)))
     T(d, f"PART {n}", W / 2, 440, 48, RED, a, f="oswald")
     T(d, title, W / 2, 540, 140, CREAM, a)
     w = 260 * ease_out(L / 0.6)
@@ -923,11 +923,159 @@ def s_o4(t, L):
     return cam(img, t, 36, 0.1)
 
 
+# ---------------------------------------------------------------- scenes added for the faster-paced cut
+def s_c4(t, L):
+    img = street(t, None, flood_h=3.0, flood_speed=6, ch=4.0, yh=560)
+    out = cam(img, t, 40, 0.3, 1.04 + 0.03 * L / 4)
+    pil = to_img(out).convert("RGBA")
+    d = ImageDraw.Draw(pil, "RGBA")
+    a = int(255 * fade_in(L, 1.6))
+    T(d, "ANARCHISTS?", W / 2, H / 2 - 60, 150, CREAM, a, stroke=8)
+    return from_img(pil)
+
+
+def s_t7(t, L):
+    img = base()
+    d = ImageDraw.Draw(img, "RGBA")
+    # wall cutaway: a thin steel plate holding back a wall of molasses
+    d.rectangle([300, 220, 860, 900], fill=MOL)
+    d.rectangle([860, 220, 884, 900], fill=(170, 165, 160))
+    for k in range(9):
+        d.ellipse([862, 250 + k * 75, 882, 270 + k * 75], fill=(110, 105, 100))
+    for k in range(5):
+        y = 300 + k * 120
+        L_ = 60 + 30 * np.sin(t * 3 + k)
+        d.line([(700, y), (700 + L_, y)], fill=AMBER, width=8)
+        d.polygon([(700 + L_, y - 14), (724 + L_, y), (700 + L_, y + 14)], fill=AMBER)
+    d.line([(860, 940), (884, 940)], fill=CREAM, width=4)
+    T(d, "UNDER 1 INCH", 872, 930, 40, CREAM, int(255 * fade_in(L, 0.5)), f="oswald")
+    s1 = sentence_t("t7", 1) - PARA["t7"]["start"]
+    T(d, "TOO THIN", 1400, 420, 110, CREAM, int(255 * fade_in(L, s1 + 1.5)))
+    T(d, "TOO BRITTLE", 1400, 570, 110, RED, int(255 * fade_in(L, s1 + 2.5)))
+    T(d, "per modern engineering re-examinations", 1400, 680, 32, (190, 180, 160), int(255 * fade_in(L, s1 + 2.5)), f="oldi")
+    return cam(img, t, 41, 0.3)
+
+
+def s_s5(t, L):
+    img = base()
+    d = ImageDraw.Draw(img, "RGBA")
+    calendar(d, 620, 540, "JAN 1919", "15")
+    calendar(d, 1300, 540, "JAN 1919", "16")
+    a = int(255 * fade_in(L, 0.6))
+    d.rounded_rectangle([430, 300, 810, 780], 26, outline=RED + (a,), width=10)
+    T(d, "THE FLOOD", 620, 850, 48, RED, a, f="oswald")
+    s1 = sentence_t("s5", 1) - PARA["s5"]["start"]
+    if L > s1 + 1.0:
+        gm.stamp(img, "RATIFIED", 1300, 820, ease_out((L - s1 - 1.0) / 0.15), angle=-6, size=80)
+        d = ImageDraw.Draw(img, "RGBA")
+        T(d, "PROHIBITION", 1300, 250, 48, AMBER, int(255 * fade_in(L, s1 + 1.0)), f="oswald")
+    return cam(img, t, 42, 0.3 + (8 * np.exp(-(L - s1 - 1.0) * 8) if L > s1 + 1.0 else 0))
+
+
+def s_s6(t, L):
+    img = base().convert("RGB")
+    m = 5 + 25 * smoothstep(0.0, PARA["s6"]["dur"], L)
+    zw.draw_clock(img, W / 2, 540, 300, m * 6, 12 * 30 + m * 0.5)
+    return cam(img, t, 43, 0.3, 1.0 + 0.05 * L / 4)
+
+
+def s_w8(t, L):
+    img = base()
+    d = ImageDraw.Draw(img, "RGBA")
+    by = 880
+    d.rectangle([0, by, W, H], fill=(46, 40, 34))
+    d.rectangle([1100, by - 300, 1500, by], fill=(118, 92, 72), outline=(70, 54, 42), width=4)  # two-story building
+    for fl in range(2):
+        for c in range(3):
+            d.rectangle([1140 + c * 120, by - 270 + fl * 140, 1200 + c * 120, by - 190 + fl * 140], fill=(36, 32, 30))
+    k = ease_out(L / 1.2)
+    crest = by - 380 * k
+    pts = [(x, crest + 12 * np.sin(x * 0.02 + t * 4)) for x in range(0, 1000, 20)]
+    d.polygon(pts + [(1000, by), (0, by)], fill=MOL)
+    d.line(pts, fill=(130, 80, 40), width=5)
+    cx = 300 + (t * 400) % 900  # a car-speed reference
+    d.rounded_rectangle([cx, by - 60, cx + 160, by - 10], 12, fill=(150, 150, 150, int(255 * fade_in(L, 1.5))))
+    T(d, "TALLER THAN A TWO-STORY BUILDING", W / 2, 140, 64, CREAM, int(255 * fade_in(L, 0.8)))
+    T(d, "FASTER THAN CITY TRAFFIC", W / 2, 230, 56, AMBER, int(255 * fade_in(L, PARA["w8"]["dur"] * 0.55)))
+    T(d, "ILLUSTRATION", 1800, 940, 30, (170, 160, 140), anchor="rm", f="oswald")
+    return cam(img, t, 44, 0.6)
+
+
+def s_w7(t, L):
+    img = base()
+    d = ImageDraw.Draw(img, "RGBA")
+    d.rectangle([0, 760, W, H], fill=MOL)
+    fh = Image.new("RGBA", (700, 560), (0, 0, 0, 0))
+    fd = ImageDraw.Draw(fh)
+    fd.rectangle([40, 80, 660, 540], fill=(140, 100, 74), outline=(80, 56, 42), width=6)
+    fd.rectangle([250, 300, 450, 540], fill=(40, 32, 28))
+    fd.text((150, 110), "ENGINE 31", font=font("oswald", 70), fill=CREAM)
+    fh = fh.rotate(-9, resample=Image.BICUBIC, expand=True)
+    img.alpha_composite(fh, (300, 250))
+    s1 = sentence_t("w7", 1) - PARA["w7"]["start"]
+    a = int(255 * fade_in(L, s1 + 0.8))
+    card(d, 1450, 520, 640, 200, a)
+    T(d, "GEORGE LAYHE", 1450, 490, 72, CREAM, a)
+    T(d, "FIREFIGHTER, ENGINE 31", 1450, 570, 36, (200, 190, 170), a, f="oswald")
+    return cam(img, t, 45, 0.2, 1.0 + 0.03 * L / 6)
+
+
+def s_r5(t, L):
+    img = base()
+    d = ImageDraw.Draw(img, "RGBA")
+    k = ease_out(L / 2.0)
+    d.rectangle([500, 820 - 120, 700, 820], fill=(150, 90, 40), outline=CREAM, width=4)
+    d.rectangle([1220, 820 - 120 - 360 * k, 1420, 820], fill=(78, 44, 22), outline=CREAM, width=4)
+    T(d, "WARM", 600, 870, 44, CREAM, f="oswald")
+    T(d, "COLD", 1320, 870, 44, (170, 180, 220), f="oswald")
+    T(d, "4X THICKER", W / 2, 200, 110, CREAM, int(255 * fade_in(L, 1.0)))
+    T(d, "researchers' estimate • illustrative scale", W / 2, 300, 32, (180, 170, 150), int(255 * fade_in(L, 1.0)), f="oldi")
+    return cam(img, t, 46, 0.2)
+
+
+def s_r6(t, L):
+    img = base()
+    d = ImageDraw.Draw(img, "RGBA")
+    T(d, "AMONG THE DEAD", W / 2, 320, 48, (190, 180, 160), int(255 * fade_in(L, 0.2, 0.8)), f="oswald")
+    T(d, "MARIA DI STASIO, 10", W / 2, 480, 90, CREAM, int(255 * fade_in(L, 1.6, 1.0)))
+    T(d, "PASQUALE IANTOSCA, 10", W / 2, 620, 90, CREAM, int(255 * fade_in(L, 3.0, 1.0)))
+    return cam(img, t, 47, 0.0, 1.0 + 0.02 * L / 6)
+
+
+def s_k5(t, L):
+    img = base()
+    d = ImageDraw.Draw(img, "RGBA")
+    courtroom(d)
+    d.rectangle([0, 0, W, H], fill=(0, 0, 0, int(140 * (1 - fade_in(L, 1.5, 1.0)))))
+    T(d, "NEXT: THE COURTROOM", W / 2, 200, 90, CREAM, int(255 * fade_in(L, 2.6)), stroke=6)
+    return cam(img, t, 48, 0.2, 1.0 + 0.03 * L / 4)
+
+
+def s_b7(t, L):
+    img = to_img(zw.paper_bg(9, (0.86, 0.8, 0.66))).convert("RGBA")
+    d = ImageDraw.Draw(img, "RGBA")
+    d.rectangle([520, 120, 1400, 980], fill=(236, 228, 210), outline=(90, 70, 50), width=6)
+    T(d, "AUDITOR'S REPORT", 960, 220, 64, INK, f="oldb")
+    T(d, "1925", 960, 300, 54, (110, 80, 50), f="oldb")
+    for k in range(10):
+        d.line([(600, 380 + k * 44), (1320 - (k % 3) * 120, 380 + k * 44)], fill=(160, 145, 120), width=5)
+    T(d, "COL. HUGH OGDEN • NEARLY 6 YEARS", 960, 880, 40, (90, 70, 50), int(255 * fade_in(L, 0.8)), f="oswald")
+    T(d, "illustrative reconstruction", 560, 950, 26, (130, 110, 90), anchor="lm", f="oldi")
+    s1 = sentence_t("b7", 1) - PARA["b7"]["start"]
+    hit = s1 + PARA["b7"]["dur"] * 0.35
+    if L > hit:
+        gm.stamp(img, "NO SABOTAGE", 960, 600, ease_out((L - hit) / 0.15), angle=-7, size=110)
+    return cam(img, t, 49, 0.3 + (8 * np.exp(-(L - hit) * 8) if L > hit else 0))
+
+
 SCENE = {"c1": s_c1, "c2": s_c2, "c3": s_c3, "t1": s_t1, "t2": s_t2, "t3": s_t3, "t4": s_t4, "t5": s_t5, "t6": s_t6,
          "s1": s_s1, "s2": s_s2, "s3": s_s3, "s4": s_s4, "w1": s_w1, "w2": s_w2, "w3": s_w3, "w4": s_w4, "w5": s_w5,
          "w6": s_w5, "r1": s_r1, "r2": s_r2, "r3": s_r3, "r4": s_r4, "k1": s_k1, "k2": s_k2, "k3": s_k3, "b1": s_b1,
          "b2": s_b2, "b3": s_b3, "b4": s_b4, "b5": s_b5, "b6": s_b6, "l1": s_l1, "l2": s_l2, "l3": s_l3, "o1": s_o1,
-         "o2": s_o2, "o3": s_o3, "o4": s_o4}
+         "o2": s_o2, "o3": s_o3, "o4": s_o4,
+         "c4": s_c4, "t7": s_t7, "s5": s_s5, "s6": s_s6, "w8": s_w8, "w7": s_w7, "r5": s_r5, "r6": s_r6,
+         "k5": s_k5, "b7": s_b7}
+CONTINUE = {"w6": "w5", "t8": "t6", "k4": "k1"}  # paragraphs that keep the previous paragraph's shot running
 SECTION_LOOK = {"trap": "cold", "cold": "photo", "outro": "photo"}
 
 
@@ -943,8 +1091,9 @@ def scene_at(t):
     pid = ORDER[i]
     p = PARA[pid]
     # paragraph scenes continue through the pause after them; w6 continues w5's shot
-    if pid == "w6":
-        return SCENE["w5"](t, t - PARA["w5"]["start"]), p["section"]
+    if pid in CONTINUE:
+        src = CONTINUE[pid]
+        return SCENE[src](t, t - PARA[src]["start"]), p["section"]
     return SCENE[pid](t, t - p["start"]), p["section"]
 
 

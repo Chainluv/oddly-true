@@ -4,21 +4,21 @@
    "id": "c1",
    "section": "cold",
    "start": 0.6,
-   "dur": 9.100666666666667,
+   "dur": 7.484,
    "sentences": [
     [
      0.6,
-     3.3296359338061468,
+     2.8366099290780142,
      "January 15th, 1919."
     ],
     [
-     3.3296359338061468,
-     4.154874704491726,
+     2.8366099290780142,
+     3.512794326241135,
      "Boston."
     ],
     [
-     4.154874704491726,
-     9.550666666666666,
+     3.512794326241135,
+     7.933999999999999,
      "It's lunchtime, it's unusually warm for winter, and people are out enjoying it."
     ]
    ]
@@ -26,22 +26,22 @@
   {
    "id": "c2",
    "section": "cold",
-   "start": 10.600666666666667,
-   "dur": 12.551916666666667,
+   "start": 8.684,
+   "dur": 10.121833333333333,
    "sentences": [
     [
-     10.600666666666667,
-     13.462647435897436,
+     8.684,
+     10.985192307692307,
      "Then they hear a sound like a machine gun."
     ],
     [
-     13.462647435897436,
-     14.893637820512822,
+     10.985192307692307,
+     12.13578846153846,
      "The ground shakes."
     ],
     [
-     14.893637820512822,
-     23.002583333333334,
+     12.13578846153846,
+     18.655833333333334,
      "And a wall of something dark and thick, taller than a two-story house, comes rolling down the street at 35 miles an hour."
     ]
    ]
@@ -49,35 +49,53 @@
   {
    "id": "c3",
    "section": "cold",
-   "start": 24.052583333333335,
-   "dur": 6.332625,
+   "start": 19.405833333333334,
+   "dur": 5.110666666666667,
    "sentences": [
     [
-     24.052583333333335,
-     25.277443003144654,
+     19.405833333333334,
+     20.388606918238995,
      "It isn't water."
     ],
     [
-     25.277443003144654,
-     26.44397602201258,
+     20.388606918238995,
+     21.32458176100629,
      "It's molasses."
     ],
     [
-     26.44397602201258,
-     30.235208333333333,
+     21.32458176100629,
+     24.366500000000002,
      "And before the day is over, it will kill 21 people."
+    ]
+   ]
+  },
+  {
+   "id": "c4",
+   "section": "cold",
+   "start": 25.0165,
+   "dur": 3.3259166666666666,
+   "sentences": [
+    [
+     25.0165,
+     27.43198591549296,
+     "And when it was over, the company would blame..."
+    ],
+    [
+     27.43198591549296,
+     28.192416666666666,
+     "anarchists."
     ]
    ]
   },
   {
    "id": "t1",
    "section": "tank",
-   "start": 36.78520833333334,
-   "dur": 11.354625,
+   "start": 33.34241666666667,
+   "dur": 9.00725,
    "sentences": [
     [
-     36.78520833333334,
-     47.98983333333334,
+     33.34241666666667,
+     42.19966666666667,
      "In 1919 the North End was a crowded, working-class neighborhood, mostly Italian and Irish immigrant families packed into tenements near the harbor."
     ]
    ]
@@ -85,17 +103,17 @@
   {
    "id": "t2",
    "section": "tank",
-   "start": 49.039833333333334,
-   "dur": 16.501208333333334,
+   "start": 42.94966666666667,
+   "dur": 13.202416666666666,
    "sentences": [
     [
-     49.039833333333334,
-     57.18151383125865,
+     42.94966666666667,
+     49.448795297372065,
      "Right in the middle of it, on Commercial Street, stood a giant steel tank: 50 feet tall and 90 feet across."
     ],
     [
-     57.18151383125865,
-     65.39104166666667,
+     49.448795297372065,
+     56.00208333333334,
      "It belonged to the Purity Distilling Company, part of a bigger corporation called United States Industrial Alcohol."
     ]
    ]
@@ -103,27 +121,27 @@
   {
    "id": "t3",
    "section": "tank",
-   "start": 66.44104166666666,
-   "dur": 13.457041666666667,
+   "start": 56.75208333333334,
+   "dur": 10.826708333333332,
    "sentences": [
     [
-     66.44104166666666,
-     68.17965012562814,
+     56.75208333333334,
+     58.14703015075377,
      "Inside was molasses."
     ],
     [
-     68.17965012562814,
-     69.85138902847571,
+     58.14703015075377,
+     59.48832516750419,
      "And not for baking."
     ],
     [
-     69.85138902847571,
-     77.40764886934673,
+     59.48832516750419,
+     65.55097864321608,
      "Molasses could be fermented into industrial alcohol, which was used to make munitions during World War I."
     ],
     [
-     77.40764886934673,
-     79.74808333333333,
+     65.55097864321608,
+     67.42879166666667,
      "That made it very profitable."
     ]
    ]
@@ -131,40 +149,58 @@
   {
    "id": "t4",
    "section": "tank",
-   "start": 80.79808333333332,
-   "dur": 18.783041666666666,
+   "start": 68.17879166666667,
+   "dur": 15.257625,
    "sentences": [
     [
-     80.79808333333332,
-     84.54889042207792,
+     68.17879166666667,
+     71.21993695887446,
      "The tank went up in 1915, and it was rushed."
     ],
     [
-     84.54889042207792,
-     90.23559794372294,
+     71.21993695887446,
+     75.83070562770563,
      "The man in charge of building it was a company treasurer with no engineering background."
     ],
     [
-     90.23559794372294,
-     92.65547348484847,
+     75.83070562770563,
+     77.79273484848486,
      "He couldn't even read a blueprint."
     ],
     [
-     92.65547348484847,
-     99.431125,
+     77.79273484848486,
+     83.28641666666667,
      "By most accounts, the tank was never properly tested by filling it with water before the molasses went in."
+    ]
+   ]
+  },
+  {
+   "id": "t7",
+   "section": "tank",
+   "start": 84.03641666666667,
+   "dur": 9.52225,
+   "sentences": [
+    [
+     84.03641666666667,
+     86.74395555555556,
+     "Its steel walls were well under an inch thick."
+    ],
+    [
+     86.74395555555556,
+     93.40866666666666,
+     "Engineers who have re-examined the disaster since say the steel was both too thin and too brittle for the load it carried."
     ]
    ]
   },
   {
    "id": "t5",
    "section": "tank",
-   "start": 100.48112499999999,
-   "dur": 2.373666666666667,
+   "start": 94.15866666666666,
+   "dur": 1.9991666666666668,
    "sentences": [
     [
-     100.48112499999999,
-     102.70479166666667,
+     94.15866666666666,
+     96.00783333333332,
      "And from the start, it leaked."
     ]
    ]
@@ -172,63 +208,99 @@
   {
    "id": "t6",
    "section": "tank",
-   "start": 104.05479166666666,
-   "dur": 15.861083333333333,
+   "start": 96.85783333333333,
+   "dur": 12.943583333333333,
    "sentences": [
     [
-     104.05479166666666,
-     110.6571146238651,
+     96.85783333333333,
+     102.2341251621271,
      "Molasses seeped through the seams so badly that local families brought buckets to collect it for free."
     ],
     [
-     110.6571146238651,
-     113.71374562256808,
+     102.2341251621271,
+     104.72314915693904,
      "Neighbors said the tank groaned and rumbled."
     ],
     [
-     113.71374562256808,
-     115.42545898184176,
+     104.72314915693904,
+     106.11700259403372,
      "And the company's fix?"
     ],
     [
-     115.42545898184176,
-     119.765875,
+     106.11700259403372,
+     109.65141666666666,
      "They painted the tank brown, so the leaks would be harder to see."
+    ]
+   ]
+  },
+  {
+   "id": "t8",
+   "section": "tank",
+   "start": 110.40141666666666,
+   "dur": 2.4002916666666665,
+   "sentences": [
+    [
+     110.40141666666666,
+     112.65170833333333,
+     "That cover-up would come back to haunt them."
     ]
    ]
   },
   {
    "id": "s1",
    "section": "storm",
-   "start": 124.71587499999998,
-   "dur": 19.023958333333333,
+   "start": 115.30170833333332,
+   "dur": 15.432208333333334,
    "sentences": [
     [
-     124.71587499999998,
-     126.5039342105263,
+     115.30170833333332,
+     116.74949649122806,
      "Now here's the twist."
     ],
     [
-     126.5039342105263,
-     134.38463961988302,
+     116.74949649122806,
+     123.13048874269005,
      "By January 1919, the war was over, but the alcohol business was facing a bigger threat: Prohibition."
     ],
     [
-     134.38463961988302,
-     143.58983333333333,
+     123.13048874269005,
+     130.58391666666665,
      "The amendment banning alcohol was about to be ratified, and producers wanted to make as much as they could while they still had time."
+    ]
+   ]
+  },
+  {
+   "id": "s5",
+   "section": "storm",
+   "start": 131.33391666666665,
+   "dur": 8.608166666666667,
+   "sentences": [
+    [
+     131.33391666666665,
+     132.97428838383837,
+     "And here's the eerie part."
+    ],
+    [
+     132.97428838383837,
+     136.71638636363636,
+     "The amendment was ratified on January 16th, 1919."
+    ],
+    [
+     136.71638636363636,
+     139.79208333333332,
+     "The day after the disaster you're about to hear about."
     ]
    ]
   },
   {
    "id": "s2",
    "section": "storm",
-   "start": 144.6398333333333,
-   "dur": 5.493041666666667,
+   "start": 140.54208333333332,
+   "dur": 4.47,
    "sentences": [
     [
-     144.6398333333333,
-     149.98287499999998,
+     140.54208333333332,
+     144.86208333333332,
      "So the tank was close to full, holding about 2.3 million gallons."
     ]
    ]
@@ -236,27 +308,27 @@
   {
    "id": "s3",
    "section": "storm",
-   "start": 151.032875,
-   "dur": 18.979625,
+   "start": 145.61208333333332,
+   "dur": 15.559458333333334,
    "sentences": [
     [
-     151.032875,
-     153.08362623762375,
+     145.61208333333332,
+     147.29034117161714,
      "Then the weather got weird."
     ],
     [
-     153.08362623762375,
-     158.42800825082506,
+     147.29034117161714,
+     151.66398281078105,
      "Just a day or two earlier, Boston had been bitterly cold, close to zero degrees."
     ],
     [
-     158.42800825082506,
-     163.02666254125413,
+     151.66398281078105,
+     155.42734887238723,
      "On the morning of the 15th, the temperature shot up past 40."
     ],
     [
-     163.02666254125413,
-     169.86249999999998,
+     155.42734887238723,
+     161.02154166666665,
      "A fresh shipment of warmer molasses had recently been pumped in on top of the cold stuff already inside."
     ]
    ]
@@ -264,40 +336,53 @@
   {
    "id": "s4",
    "section": "storm",
-   "start": 170.9125,
-   "dur": 12.201416666666667,
+   "start": 161.77154166666665,
+   "dur": 9.861,
    "sentences": [
     [
-     170.9125,
-     172.63413095238096,
+     161.77154166666665,
+     163.15882738095237,
      "Warm molasses expands."
     ],
     [
-     172.63413095238096,
-     173.740893707483,
+     163.15882738095237,
+     164.0506539115646,
      "It ferments."
     ],
     [
-     173.740893707483,
-     175.27806420068026,
+     164.0506539115646,
+     165.2893018707483,
      "It builds pressure."
     ],
     [
-     175.27806420068026,
-     182.96391666666665,
+     165.2893018707483,
+     171.48254166666666,
      "And all of that was pushing against steel that was already too thin, held together by rivets that were already failing."
+    ]
+   ]
+  },
+  {
+   "id": "s6",
+   "section": "storm",
+   "start": 172.23254166666666,
+   "dur": 4.322375,
+   "sentences": [
+    [
+     172.23254166666666,
+     176.40491666666665,
+     "And at lunchtime on January 15th, the tank finally ran out of time."
     ]
    ]
   },
   {
    "id": "w1",
    "section": "wave",
-   "start": 187.91391666666667,
-   "dur": 4.157666666666667,
+   "start": 178.95491666666666,
+   "dur": 3.28575,
    "sentences": [
     [
-     187.91391666666667,
-     191.92158333333333,
+     178.95491666666666,
+     182.09066666666666,
      "Around 12:30 in the afternoon, the tank gave way."
     ]
    ]
@@ -305,17 +390,17 @@
   {
    "id": "w2",
    "section": "wave",
-   "start": 192.97158333333334,
-   "dur": 13.486375,
+   "start": 182.84066666666666,
+   "dur": 11.006958333333333,
    "sentences": [
     [
-     192.97158333333334,
-     199.87433019262983,
+     182.84066666666666,
+     188.46009736180903,
      "Witnesses heard a deep rumble, then a rapid popping as rivets shot out of the steel like bullets."
     ],
     [
-     199.87433019262983,
-     206.30795833333335,
+     188.46009736180903,
+     193.697625,
      "The walls split open, and roughly 13,000 tons of molasses came out all at once."
     ]
    ]
@@ -323,73 +408,109 @@
   {
    "id": "w3",
    "section": "wave",
-   "start": 207.35795833333333,
-   "dur": 14.855416666666667,
+   "start": 194.447625,
+   "dur": 11.978541666666667,
    "sentences": [
     [
-     207.35795833333333,
-     210.940047008547,
+     194.447625,
+     197.32893643162393,
      "Molasses is about 40 percent heavier than water."
     ],
     [
-     210.940047008547,
-     212.76251317663818,
+     197.32893643162393,
+     198.7948668091168,
      "So this wasn't a spill."
     ],
     [
-     212.76251317663818,
-     214.01938639601138,
+     198.7948668091168,
+     199.80585327635328,
      "It was a wave."
     ],
     [
-     214.01938639601138,
-     222.063375,
+     199.80585327635328,
+     206.27616666666665,
      "Estimates vary, but many accounts put it around 25 feet high at first, moving at about 35 miles an hour."
+    ]
+   ]
+  },
+  {
+   "id": "w8",
+   "section": "wave",
+   "start": 207.02616666666665,
+   "dur": 5.964208333333334,
+   "sentences": [
+    [
+     207.02616666666665,
+     207.97035434472934,
+     "Picture that."
+    ],
+    [
+     207.97035434472934,
+     212.840375,
+     "A wall of syrup taller than a two-story building, moving faster than a car on a city street."
     ]
    ]
   },
   {
    "id": "w4",
    "section": "wave",
-   "start": 223.113375,
-   "dur": 19.79425,
+   "start": 213.590375,
+   "dur": 15.792833333333334,
    "sentences": [
     [
-     223.113375,
-     224.92189325396825,
+     213.590375,
+     215.03050886243386,
      "It flattened buildings."
     ],
     [
-     224.92189325396825,
-     228.78838055555553,
+     215.03050886243386,
+     218.10941574074073,
      "It ripped part of the elevated railway off its supports."
     ],
     [
-     228.78838055555553,
-     231.78179007936507,
+     218.10941574074073,
+     220.49308558201056,
      "It knocked a firehouse off its foundation."
     ],
     [
-     231.78179007936507,
-     235.39882658730158,
+     220.49308558201056,
+     223.3733533068783,
      "Wagons, horses and people were swept away or buried."
     ],
     [
-     235.39882658730158,
-     242.757625,
+     223.3733533068783,
+     229.23320833333332,
      "At the crushed firehouse, rescuers spent hours cutting through the floorboards to reach the men trapped beneath."
+    ]
+   ]
+  },
+  {
+   "id": "w7",
+   "section": "wave",
+   "start": 229.98320833333332,
+   "dur": 10.146208333333334,
+   "sentences": [
+    [
+     229.98320833333332,
+     235.033924122807,
+     "Inside that firehouse, men from Engine 31 had been eating lunch and playing cards."
+    ],
+    [
+     235.033924122807,
+     239.97941666666665,
+     "One of them, firefighter George Layhe, was pinned beneath the floor, and didn't survive."
     ]
    ]
   },
   {
    "id": "w5",
    "section": "wave",
-   "start": 243.807625,
-   "dur": 2.87525,
+   "start": 240.72941666666665,
+   "dur": 2.497875,
    "sentences": [
     [
-     243.807625,
-     246.532875,
+     240.72941666666665,
+     243.07729166666664,
      "And that was just the first few seconds."
     ]
    ]
@@ -397,12 +518,12 @@
   {
    "id": "w6",
    "section": "wave",
-   "start": 247.582875,
-   "dur": 4.185875,
+   "start": 243.82729166666664,
+   "dur": 3.4337916666666666,
    "sentences": [
     [
-     247.582875,
-     251.61875,
+     243.82729166666664,
+     247.1110833333333,
      "Because the molasses was about to do something even worse."
     ]
    ]
@@ -410,22 +531,22 @@
   {
    "id": "r1",
    "section": "trap",
-   "start": 257.36875000000003,
-   "dur": 12.1345,
+   "start": 251.2610833333333,
+   "dur": 10.051333333333334,
    "sentences": [
     [
-     257.36875000000003,
-     261.45285335195535,
+     251.2610833333333,
+     254.63528072625695,
      "When molasses flows fast, it acts almost like a liquid."
     ],
     [
-     261.45285335195535,
-     267.1438170391062,
+     254.63528072625695,
+     259.33703119180626,
      "But once that wave spread out and hit the cold January air, it started to cool."
     ],
     [
-     267.1438170391062,
-     269.35325000000006,
+     259.33703119180626,
+     261.1624166666666,
      "And cold molasses thickens."
     ]
    ]
@@ -433,45 +554,63 @@
   {
    "id": "r2",
    "section": "trap",
-   "start": 270.40325,
-   "dur": 11.656958333333334,
+   "start": 261.9124166666666,
+   "dur": 9.449291666666667,
    "sentences": [
     [
-     270.40325,
-     275.76444649621214,
+     261.9124166666666,
+     266.24504119318175,
      "People who survived the impact were now stuck in it, like flies on flypaper."
     ],
     [
-     275.76444649621214,
-     279.3603709753788,
+     266.24504119318175,
+     269.1510698390151,
      "The more they struggled, the more tired they got."
     ],
     [
-     279.3603709753788,
-     281.91020833333334,
+     269.1510698390151,
+     271.21170833333326,
      "Rescuers wading in got stuck too."
+    ]
+   ]
+  },
+  {
+   "id": "r5",
+   "section": "trap",
+   "start": 271.96170833333326,
+   "dur": 7.951666666666667,
+   "sentences": [
+    [
+     271.96170833333326,
+     276.2266194444444,
+     "Researchers estimate the cold made the molasses at least four times thicker."
+    ],
+    [
+     276.2266194444444,
+     279.76337499999994,
+     "Even trapped horses couldn't be freed, and had to be put down."
     ]
    ]
   },
   {
    "id": "r3",
    "section": "trap",
-   "start": 282.96020833333336,
-   "dur": 15.434833333333334,
+   "start": 280.51337499999994,
+   "dur": 12.743833333333333,
    "sentences": [
     [
-     282.96020833333336,
-     290.82277692043897,
+     280.51337499999994,
+     286.9916843278463,
      "Sailors from a nearby training ship were among the first to rush in, along with police, firefighters and the Red Cross."
     ],
     [
-     290.82277692043897,
-     296.0435224622771,
+     286.9916843278463,
+     291.2932817215363,
      "They pulled people out of a brown, sticky mess that was waist-deep in places."
     ],
     [
-     296.0435224622771,
-     298.2450416666667,
+     291.2932817215363,
+     293.1072083333333,
      "Rescue work went on for days."
     ]
    ]
@@ -479,58 +618,84 @@
   {
    "id": "r4",
    "section": "trap",
-   "start": 299.2950416666667,
-   "dur": 9.317291666666666,
+   "start": 293.8572083333333,
+   "dur": 7.62275,
    "sentences": [
     [
-     299.2950416666667,
-     302.451989790287,
+     293.8572083333333,
+     296.4306056843267,
      "21 people died, some of them children."
     ],
     [
-     302.451989790287,
-     305.2446746688742,
+     296.4306056843267,
+     298.7070725717439,
      "Around 150 were injured."
     ],
     [
-     305.2446746688742,
-     308.46233333333333,
+     298.7070725717439,
+     301.3299583333333,
      "One victim wasn't found for nearly four months."
+    ]
+   ]
+  },
+  {
+   "id": "r6",
+   "section": "trap",
+   "start": 302.0799583333333,
+   "dur": 4.9355,
+   "sentences": [
+    [
+     302.0799583333333,
+     306.8654583333333,
+     "Among the dead were two ten-year-olds, Maria Di Stasio and Pasquale Iantosca."
     ]
    ]
   },
   {
    "id": "k1",
    "section": "cleanup",
-   "start": 313.81233333333336,
-   "dur": 10.038375,
+   "start": 310.41545833333333,
+   "dur": 7.8754583333333334,
    "sentences": [
     [
-     313.81233333333336,
-     316.1279654535865,
+     310.41545833333333,
+     312.22458465189874,
      "Cleaning it up was a nightmare."
     ],
     [
-     316.1279654535865,
-     323.70070833333335,
+     312.22458465189874,
+     318.14091666666667,
      "Crews eventually used salt water from the harbor to break the molasses down, because fresh water barely touched it."
+    ]
+   ]
+  },
+  {
+   "id": "k4",
+   "section": "cleanup",
+   "start": 318.89091666666667,
+   "dur": 5.75425,
+   "sentences": [
+    [
+     318.89091666666667,
+     324.49516666666665,
+     "The fire department brought in a fireboat and blasted the streets with powerful streams, block by block."
     ]
    ]
   },
   {
    "id": "k2",
    "section": "cleanup",
-   "start": 324.75070833333336,
-   "dur": 9.7685,
+   "start": 325.24516666666665,
+   "dur": 7.7,
    "sentences": [
     [
-     324.75070833333336,
-     330.6915465686275,
+     325.24516666666665,
+     329.9084019607843,
      "The mess got tracked everywhere: onto streetcars, into homes, across the city."
     ],
     [
-     330.6915465686275,
-     334.36920833333335,
+     329.9084019607843,
+     332.79516666666666,
      "Boston Harbor reportedly ran brown for months."
     ]
    ]
@@ -538,25 +703,48 @@
   {
    "id": "k3",
    "section": "cleanup",
-   "start": 335.41920833333336,
-   "dur": 8.357791666666667,
+   "start": 333.54516666666666,
+   "dur": 6.726875,
    "sentences": [
     [
-     335.41920833333336,
-     343.627,
+     333.54516666666666,
+     340.12204166666663,
      "And people who lived in the North End for decades afterward swore that on hot summer days, you could still smell molasses."
+    ]
+   ]
+  },
+  {
+   "id": "k5",
+   "section": "cleanup",
+   "start": 340.87204166666663,
+   "dur": 3.6689583333333333,
+   "sentences": [
+    [
+     340.87204166666663,
+     342.73751355421683,
+     "But the biggest fight was still ahead."
+    ],
+    [
+     342.73751355421683,
+     343.75504367469875,
+     "Not with molasses."
+    ],
+    [
+     343.75504367469875,
+     344.39099999999996,
+     "In court."
     ]
    ]
   },
   {
    "id": "b1",
    "section": "blame",
-   "start": 348.57700000000006,
-   "dur": 2.234125,
+   "start": 347.041,
+   "dur": 1.915,
    "sentences": [
     [
-     348.57700000000006,
-     350.6611250000001,
+     347.041,
+     348.806,
      "So who was responsible?"
     ]
    ]
@@ -564,22 +752,22 @@
   {
    "id": "b2",
    "section": "blame",
-   "start": 352.01112500000005,
-   "dur": 13.524208333333334,
+   "start": 349.656,
+   "dur": 10.970833333333333,
    "sentences": [
     [
-     352.01112500000005,
-     355.1803686808847,
+     349.656,
+     352.2201785150079,
      "The company had an answer ready: anarchists."
     ],
     [
-     355.1803686808847,
-     358.1594577409163,
+     352.2201785150079,
+     354.63050631911534,
      "They claimed someone had bombed the tank."
     ],
     [
-     358.1594577409163,
-     365.3853333333334,
+     354.63050631911534,
+     360.47683333333333,
      "And in 1919, during a wave of real anarchist bombings, that wasn't an impossible story to sell."
     ]
    ]
@@ -587,22 +775,22 @@
   {
    "id": "b3",
    "section": "blame",
-   "start": 366.4353333333334,
-   "dur": 18.64025,
+   "start": 361.22683333333333,
+   "dur": 14.986916666666668,
    "sentences": [
     [
-     366.4353333333334,
-     369.1645215252153,
+     361.22683333333333,
+     363.4167841328413,
      "But the victims weren't buying it."
     ],
     [
-     369.1645215252153,
-     377.9661534440345,
+     363.4167841328413,
+     370.4793754612546,
      "119 plaintiffs, including families of the dead, banded together and sued United States Industrial Alcohol."
     ],
     [
-     377.9661534440345,
-     384.9255833333334,
+     370.4793754612546,
+     376.06375,
      "It became one of the first major class-action-style lawsuits against a big American corporation."
     ]
    ]
@@ -610,35 +798,53 @@
   {
    "id": "b4",
    "section": "blame",
-   "start": 385.9755833333334,
-   "dur": 14.639333333333333,
+   "start": 376.81375,
+   "dur": 11.918333333333333,
    "sentences": [
     [
-     385.9755833333334,
-     388.401704263566,
+     376.81375,
+     378.78426162790703,
      "The case dragged on for years."
     ],
     [
-     388.401704263566,
-     400.46491666666674,
+     378.78426162790703,
+     388.58208333333334,
      "A court-appointed auditor heard testimony from thousands of witnesses and a long list of experts, including engineers and scientists arguing over metal, pressure and rivets."
+    ]
+   ]
+  },
+  {
+   "id": "b7",
+   "section": "blame",
+   "start": 389.33208333333334,
+   "dur": 8.602458333333333,
+   "sentences": [
+    [
+     389.33208333333334,
+     391.49802578125,
+     "The auditor was Colonel Hugh Ogden."
+    ],
+    [
+     391.49802578125,
+     397.78454166666666,
+     "He spent nearly six years on the case, and in 1925, his report rejected the bomb theory outright."
     ]
    ]
   },
   {
    "id": "b5",
    "section": "blame",
-   "start": 401.51491666666675,
-   "dur": 8.8055,
+   "start": 398.53454166666666,
+   "dur": 7.253708333333333,
    "sentences": [
     [
-     401.51491666666675,
-     405.02553904428913,
+     398.53454166666666,
+     401.415766025641,
      "In the end, the ruling was clear: there was no bomb."
     ],
     [
-     405.02553904428913,
-     410.17041666666677,
+     401.415766025641,
+     405.63824999999997,
      "The tank was simply too weak for what it held, and the company had cut corners."
     ]
    ]
@@ -646,12 +852,12 @@
   {
    "id": "b6",
    "section": "blame",
-   "start": 411.2204166666668,
-   "dur": 8.900125,
+   "start": 406.38824999999997,
+   "dur": 7.002375,
    "sentences": [
     [
-     411.2204166666668,
-     419.9705416666668,
+     406.38824999999997,
+     413.24062499999997,
      "The company was ordered to pay about $628,000 in damages, which is millions in today's money."
     ]
    ]
@@ -659,12 +865,12 @@
   {
    "id": "l1",
    "section": "legacy",
-   "start": 424.9205416666668,
-   "dur": 6.334625,
+   "start": 415.990625,
+   "dur": 4.993166666666666,
    "sentences": [
     [
-     424.9205416666668,
-     431.1051666666668,
+     415.990625,
+     420.8337916666667,
      "Here's why this story still matters, and why you probably benefit from it without knowing."
     ]
    ]
@@ -672,17 +878,17 @@
   {
    "id": "l2",
    "section": "legacy",
-   "start": 432.1551666666668,
-   "dur": 20.831958333333333,
+   "start": 421.5837916666667,
+   "dur": 16.758583333333334,
    "sentences": [
     [
-     432.1551666666668,
-     444.9682317620652,
+     421.5837916666667,
+     431.87328437149273,
      "After the flood, Massachusetts and then other states began requiring that engineers and architects check their calculations, sign off on their plans, and have projects inspected."
     ],
     [
-     444.9682317620652,
-     452.8371250000001,
+     431.87328437149273,
+     438.192375,
      "Rules we now take for granted in construction trace back, in part, to a tank of syrup that burst in Boston."
     ]
    ]
@@ -690,17 +896,17 @@
   {
    "id": "l3",
    "section": "legacy",
-   "start": 453.88712500000014,
-   "dur": 10.195958333333333,
+   "start": 438.942375,
+   "dur": 8.173125,
    "sentences": [
     [
-     453.88712500000014,
-     458.3022277070065,
+     438.942375,
+     442.4684617834395,
      "Today the spot where the tank stood is a park with ball fields."
     ],
     [
-     458.3022277070065,
-     463.93308333333346,
+     442.4684617834395,
+     446.9655,
      "The only sign of what happened is a small plaque that most people walk right past."
     ]
    ]
@@ -708,12 +914,12 @@
   {
    "id": "o1",
    "section": "outro",
-   "start": 466.2830833333335,
-   "dur": 7.250541666666667,
+   "start": 448.11550000000005,
+   "dur": 5.848333333333334,
    "sentences": [
     [
-     466.2830833333335,
-     473.38362500000017,
+     448.11550000000005,
+     453.8138333333334,
      "21 lives lost, all because a company painted over its warning signs instead of fixing them."
     ]
    ]
@@ -721,22 +927,22 @@
   {
    "id": "o2",
    "section": "outro",
-   "start": 474.4336250000001,
-   "dur": 8.166291666666666,
+   "start": 454.5638333333334,
+   "dur": 6.615375,
    "sentences": [
     [
-     474.4336250000001,
-     475.9752195512822,
+     454.5638333333334,
+     455.8071746794872,
      "A wave of molasses."
     ],
     [
-     475.9752195512822,
-     478.2567794871796,
+     455.8071746794872,
+     457.64731987179493,
      "A cover-up story about bombers."
     ],
     [
-     478.2567794871796,
-     482.4499166666668,
+     457.64731987179493,
+     461.0292083333334,
      "And a lawsuit that helped make the buildings around you safer."
     ]
    ]
@@ -744,12 +950,12 @@
   {
    "id": "o3",
    "section": "outro",
-   "start": 483.99991666666676,
-   "dur": 0.9731666666666666,
+   "start": 462.0792083333334,
+   "dur": 0.828875,
    "sentences": [
     [
-     483.99991666666676,
-     484.82308333333344,
+     462.0792083333334,
+     462.7580833333334,
      "No way."
     ]
    ]
@@ -757,17 +963,17 @@
   {
    "id": "o4",
    "section": "outro",
-   "start": 486.57308333333344,
-   "dur": 9.753083333333333,
+   "start": 464.1080833333334,
+   "dur": 7.908791666666667,
    "sentences": [
     [
-     486.57308333333344,
-     490.7428432017545,
+     464.1080833333334,
+     467.4770323464913,
      "If you want more true stories that sound made up, subscribe."
     ],
     [
-     490.7428432017545,
-     496.1761666666668,
+     467.4770323464913,
+     471.86687500000005,
      "And if you liked this one, watch another one next, because they're just as wild."
     ]
    ]
@@ -776,81 +982,81 @@
  "sections": {
   "cold": [
    0.6,
-   31.185208333333335
+   29.14241666666667
   ],
   "title": [
-   31.185208333333335,
-   34.185208333333335
+   29.14241666666667,
+   31.74241666666667
   ],
   "tank": [
-   34.185208333333335,
-   122.11587499999999
+   31.74241666666667,
+   113.70170833333333
   ],
   "storm": [
-   122.11587499999999,
-   185.31391666666667
+   113.70170833333333,
+   177.35491666666667
   ],
   "wave": [
-   185.31391666666667,
-   254.76875
+   177.35491666666667,
+   249.6610833333333
   ],
   "trap": [
-   254.76875,
-   311.21233333333333
+   249.6610833333333,
+   308.8154583333333
   ],
   "cleanup": [
-   311.21233333333333,
-   345.97700000000003
+   308.8154583333333,
+   345.441
   ],
   "blame": [
-   345.97700000000003,
-   422.32054166666677
+   345.441,
+   414.390625
   ],
   "legacy": [
-   422.32054166666677,
-   466.2830833333335
+   414.390625,
+   448.11550000000005
   ],
   "outro": [
-   466.2830833333335,
-   501.6261666666668
+   448.11550000000005,
+   487.41687500000006
   ]
  },
  "chapters": [
   [
-   34.185208333333335,
-   36.78520833333334,
+   31.74241666666667,
+   33.34241666666667,
    "THE TANK"
   ],
   [
-   122.11587499999999,
-   124.71587499999998,
+   113.70170833333333,
+   115.30170833333332,
    "THE PERFECT STORM"
   ],
   [
-   185.31391666666667,
-   187.91391666666667,
+   177.35491666666667,
+   178.95491666666666,
    "THE WAVE"
   ],
   [
-   254.76875,
-   257.36875000000003,
+   249.6610833333333,
+   251.2610833333333,
    "THE TRAP"
   ],
   [
-   311.21233333333333,
-   313.81233333333336,
+   308.8154583333333,
+   310.41545833333333,
    "THE CLEANUP"
   ],
   [
-   345.97700000000003,
-   348.57700000000006,
+   345.441,
+   347.041,
    "THE BLAME GAME"
   ],
   [
-   422.32054166666677,
-   424.9205416666668,
+   414.390625,
+   415.990625,
    "THE LEGACY"
   ]
  ],
- "duration": 501.63
+ "duration": 487.42
 }
