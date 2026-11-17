@@ -1,0 +1,800 @@
+1
+00:00:00,600 --> 00:00:03,386
+The most famous name in electric cars belongs
+
+2
+00:00:03,386 --> 00:00:05,472
+to a man who died broke.
+
+3
+00:00:05,722 --> 00:00:08,156
+January 7th, 1943.
+
+4
+00:00:08,156 --> 00:00:09,262
+New York City.
+
+5
+00:00:09,262 --> 00:00:12,402
+In room 3327 of the Hotel New Yorker, an
+
+6
+00:00:12,402 --> 00:00:16,612
+86-year-old inventor dies alone, deep in debt.
+
+7
+00:00:16,862 --> 00:00:19,445
+Sixty years later, a startup in California
+
+8
+00:00:19,445 --> 00:00:21,351
+puts his name on a car company.
+
+9
+00:00:21,351 --> 00:00:23,862
+Today, it's one of the most valuable car
+
+10
+00:00:23,862 --> 00:00:25,655
+companies on Earth.
+
+11
+00:00:25,905 --> 00:00:27,308
+And the strangest part?
+
+12
+00:00:27,308 --> 00:00:29,691
+For years, the company named after him didn't
+
+13
+00:00:29,691 --> 00:00:31,226
+even own its own name online.
+
+14
+00:00:31,226 --> 00:00:32,987
+We'll get to that.
+
+15
+00:00:33,237 --> 00:00:35,259
+This is the story of Nikola Tesla.
+
+16
+00:00:35,259 --> 00:00:37,881
+The man, the myths, and the brand.
+
+17
+00:00:42,431 --> 00:00:45,233
+Nikola Tesla was born in 1856, in a small
+
+18
+00:00:45,233 --> 00:00:48,241
+village in what is now Croatia, to a Serbian
+
+19
+00:00:48,241 --> 00:00:48,720
+family.
+
+20
+00:00:48,720 --> 00:00:50,375
+His father was a priest.
+
+21
+00:00:50,375 --> 00:00:53,173
+His mother, he said, invented gadgets for the
+
+22
+00:00:53,173 --> 00:00:54,395
+household.
+
+23
+00:00:54,645 --> 00:00:57,249
+He studied engineering, worked for telephone
+
+24
+00:00:57,249 --> 00:00:59,972
+and electric companies in Europe, and in 1884,
+
+25
+00:00:59,972 --> 00:01:02,635
+he sailed to New York, with almost nothing in
+
+26
+00:01:02,635 --> 00:01:03,945
+his pockets.
+
+27
+00:01:04,195 --> 00:01:05,771
+He had a remarkable memory.
+
+28
+00:01:05,771 --> 00:01:08,141
+He claimed he could picture entire machines in
+
+29
+00:01:08,141 --> 00:01:10,511
+his head, and test them there, before building
+
+30
+00:01:10,511 --> 00:01:11,574
+anything.
+
+31
+00:01:11,824 --> 00:01:15,139
+He landed a job working for Thomas Edison.
+
+32
+00:01:15,389 --> 00:01:18,154
+And this is where the first famous story comes
+
+33
+00:01:18,154 --> 00:01:18,335
+in.
+
+34
+00:01:18,335 --> 00:01:21,005
+According to Tesla, Edison promised him
+
+35
+00:01:21,005 --> 00:01:23,333
+$50,000 to improve his generators.
+
+36
+00:01:23,333 --> 00:01:25,555
+When Tesla delivered, Edison supposedly
+
+37
+00:01:25,555 --> 00:01:27,949
+laughed, and told him he didn't understand
+
+38
+00:01:27,949 --> 00:01:29,404
+American humor.
+
+39
+00:01:29,654 --> 00:01:32,219
+That story comes from Tesla himself, and some
+
+40
+00:01:32,219 --> 00:01:33,873
+historians doubt the details.
+
+41
+00:01:33,873 --> 00:01:36,868
+But either way, he quit within the year.
+
+42
+00:01:37,118 --> 00:01:39,574
+His first company of his own pushed him out.
+
+43
+00:01:39,574 --> 00:01:41,713
+By his own account, he ended up digging
+
+44
+00:01:41,713 --> 00:01:43,465
+ditches for a living.
+
+45
+00:01:45,615 --> 00:01:48,254
+But Tesla had an idea he'd carried since his
+
+46
+00:01:48,254 --> 00:01:50,954
+student days: a motor that ran on alternating
+
+47
+00:01:50,954 --> 00:01:53,353
+current, with no brushes and no sparking
+
+48
+00:01:53,353 --> 00:01:56,173
+contacts, almost nothing to wear out.
+
+49
+00:01:56,423 --> 00:01:58,866
+The trick was something called a rotating
+
+50
+00:01:58,866 --> 00:01:59,760
+magnetic field.
+
+51
+00:01:59,760 --> 00:02:02,297
+Feed alternating currents into coils around a
+
+52
+00:02:02,297 --> 00:02:04,721
+ring, slightly out of step with each other,
+
+53
+00:02:04,721 --> 00:02:06,751
+and the magnetic field itself spins.
+
+54
+00:02:06,751 --> 00:02:09,462
+Put a metal rotor in the middle, and the field
+
+55
+00:02:09,462 --> 00:02:11,005
+drags it around.
+
+56
+00:02:11,255 --> 00:02:14,195
+In 1888, he patented his AC induction motor,
+
+57
+00:02:14,195 --> 00:02:16,666
+and presented it to the country's top
+
+58
+00:02:16,666 --> 00:02:18,669
+electrical engineers.
+
+59
+00:02:18,919 --> 00:02:21,160
+One man was paying very close attention:
+
+60
+00:02:21,160 --> 00:02:22,280
+George Westinghouse.
+
+61
+00:02:22,280 --> 00:02:24,739
+He licensed Tesla's patents, and hired him.
+
+62
+00:02:24,739 --> 00:02:26,043
+Remember this motor.
+
+63
+00:02:26,043 --> 00:02:29,152
+It's coming back, more than a century later.
+
+64
+00:02:31,502 --> 00:02:33,113
+There was just one problem.
+
+65
+00:02:33,113 --> 00:02:35,441
+Edison had bet everything on direct current,
+
+66
+00:02:35,441 --> 00:02:38,157
+and he wasn't giving up without a fight.
+
+67
+00:02:38,407 --> 00:02:41,156
+It became known as the War of the Currents.
+
+68
+00:02:41,156 --> 00:02:43,869
+Edison's camp warned that alternating current
+
+69
+00:02:43,869 --> 00:02:46,342
+was deadly, and pointed to its use in the
+
+70
+00:02:46,342 --> 00:02:48,208
+first electric chair.
+
+71
+00:02:48,458 --> 00:02:51,284
+An engineer allied with Edison's side even
+
+72
+00:02:51,284 --> 00:02:54,379
+electrocuted animals in public demonstrations,
+
+73
+00:02:54,379 --> 00:02:57,267
+to show how dangerous AC could be.
+
+74
+00:02:57,517 --> 00:02:59,587
+Tesla fought back with showmanship.
+
+75
+00:02:59,587 --> 00:03:02,091
+In his lectures, he let high-frequency current
+
+76
+00:03:02,091 --> 00:03:04,485
+pass through his own body, lighting up lamps
+
+77
+00:03:04,485 --> 00:03:05,793
+in his hands.
+
+78
+00:03:06,043 --> 00:03:07,881
+But AC had a huge advantage.
+
+79
+00:03:07,881 --> 00:03:10,506
+It could be sent long distances efficiently.
+
+80
+00:03:10,506 --> 00:03:13,312
+Direct current, back then, couldn't.
+
+81
+00:03:13,562 --> 00:03:16,742
+In 1893, Westinghouse lit up the Chicago
+
+82
+00:03:16,742 --> 00:03:17,776
+World's Fair.
+
+83
+00:03:17,776 --> 00:03:20,465
+Millions of visitors saw a glowing white city
+
+84
+00:03:20,465 --> 00:03:22,918
+running on alternating current.
+
+85
+00:03:23,168 --> 00:03:24,770
+Then came Niagara Falls.
+
+86
+00:03:24,770 --> 00:03:27,686
+In 1896, power generated at the falls, using
+
+87
+00:03:27,686 --> 00:03:30,601
+Tesla's system, reached the city of Buffalo,
+
+88
+00:03:30,601 --> 00:03:32,792
+more than 20 miles away.
+
+89
+00:03:33,042 --> 00:03:34,496
+Alternating current won.
+
+90
+00:03:34,496 --> 00:03:37,005
+It's the kind of power coming out of your wall
+
+91
+00:03:37,005 --> 00:03:38,151
+right now.
+
+92
+00:03:38,401 --> 00:03:41,135
+So Tesla should have been rich, right?
+
+93
+00:03:44,685 --> 00:03:46,359
+Here's where it goes wrong.
+
+94
+00:03:46,359 --> 00:03:48,943
+Westinghouse's company ran into serious money
+
+95
+00:03:48,943 --> 00:03:49,402
+trouble.
+
+96
+00:03:49,402 --> 00:03:52,859
+Tesla agreed to give up his royalties, and in
+
+97
+00:03:52,859 --> 00:03:56,392
+1897, he took a lump sum of about $216,000 for
+
+98
+00:03:56,392 --> 00:03:57,914
+his patents.
+
+99
+00:03:58,164 --> 00:04:00,920
+That was a lot of money in 1897.
+
+100
+00:04:00,920 --> 00:04:02,974
+But it was a tiny slice of what those
+
+101
+00:04:02,974 --> 00:04:05,128
+royalties could have become.
+
+102
+00:04:05,378 --> 00:04:08,287
+And in 1895, a fire tore through his New York
+
+103
+00:04:08,287 --> 00:04:11,196
+laboratory, destroying years of equipment and
+
+104
+00:04:11,196 --> 00:04:12,184
+notes.
+
+105
+00:04:12,434 --> 00:04:14,985
+Then Tesla went all in on his biggest dream:
+
+106
+00:04:14,985 --> 00:04:15,855
+wireless power.
+
+107
+00:04:15,855 --> 00:04:19,053
+On Long Island, he built a giant tower called
+
+108
+00:04:19,053 --> 00:04:22,108
+Wardenclyffe, funded with $150,000 from the
+
+109
+00:04:22,108 --> 00:04:22,748
+banker J.
+
+110
+00:04:22,748 --> 00:04:23,163
+P.
+
+111
+00:04:23,163 --> 00:04:24,436
+Morgan.
+
+112
+00:04:24,686 --> 00:04:27,224
+The plan was to send messages, and eventually
+
+113
+00:04:27,224 --> 00:04:29,706
+power, through the air and the earth itself.
+
+114
+00:04:29,706 --> 00:04:32,186
+But the money ran out, and Morgan wouldn't
+
+115
+00:04:32,186 --> 00:04:33,495
+invest more.
+
+116
+00:04:33,745 --> 00:04:35,812
+The tower never did what he hoped.
+
+117
+00:04:35,812 --> 00:04:38,685
+Tesla lost the property to his creditors, and
+
+118
+00:04:38,685 --> 00:04:42,095
+in 1917, the tower was demolished for scrap.
+
+119
+00:04:42,345 --> 00:04:44,839
+For the rest of his life, Tesla moved from
+
+120
+00:04:44,839 --> 00:04:47,334
+hotel to hotel, often behind on the bills,
+
+121
+00:04:47,334 --> 00:04:49,828
+feeding pigeons, and announcing inventions
+
+122
+00:04:49,828 --> 00:04:51,616
+that never appeared.
+
+123
+00:04:51,866 --> 00:04:54,543
+He even told his biographer that he loved one
+
+124
+00:04:54,543 --> 00:04:57,642
+white pigeon, the way a man loves a woman.
+
+125
+00:04:59,992 --> 00:05:02,133
+And that's where the myths start piling up.
+
+126
+00:05:02,133 --> 00:05:03,913
+Let's sort out a few.
+
+127
+00:05:04,163 --> 00:05:06,558
+Myth number one: Tesla tore up a contract
+
+128
+00:05:06,558 --> 00:05:08,544
+worth billions, to save his friend
+
+129
+00:05:08,544 --> 00:05:09,303
+Westinghouse.
+
+130
+00:05:09,303 --> 00:05:12,024
+What we can document is the buyout: a lump sum
+
+131
+00:05:12,024 --> 00:05:13,265
+instead of royalties.
+
+132
+00:05:13,265 --> 00:05:16,006
+The dramatic tearing moment is much harder to
+
+133
+00:05:16,006 --> 00:05:16,971
+prove.
+
+134
+00:05:17,221 --> 00:05:19,497
+Myth number two: he built a death ray.
+
+135
+00:05:19,497 --> 00:05:22,322
+In the 1930s, he told reporters he'd designed
+
+136
+00:05:22,322 --> 00:05:25,084
+a beam that could stop armies from far away.
+
+137
+00:05:25,084 --> 00:05:27,960
+There's no evidence he ever built one.
+
+138
+00:05:28,210 --> 00:05:30,968
+Myth number three: the Supreme Court declared
+
+139
+00:05:30,968 --> 00:05:32,684
+Tesla the inventor of radio.
+
+140
+00:05:32,684 --> 00:05:35,760
+In 1943, the court did knock out key parts of
+
+141
+00:05:35,760 --> 00:05:38,904
+Marconi's radio patent, citing earlier work by
+
+142
+00:05:38,904 --> 00:05:40,066
+Tesla and others.
+
+143
+00:05:40,066 --> 00:05:42,643
+But it never named Tesla the inventor of
+
+144
+00:05:42,643 --> 00:05:43,630
+radio.
+
+145
+00:05:43,880 --> 00:05:46,343
+And the big one: Tesla invented everything.
+
+146
+00:05:46,343 --> 00:05:47,147
+He didn't.
+
+147
+00:05:47,147 --> 00:05:49,604
+But he did help build the electric world we
+
+148
+00:05:49,604 --> 00:05:50,061
+live in.
+
+149
+00:05:50,061 --> 00:05:52,475
+There's even a scientific unit of magnetism
+
+150
+00:05:52,475 --> 00:05:54,029
+called the tesla.
+
+151
+00:05:54,279 --> 00:05:57,372
+He died in 1943, in that hotel room.
+
+152
+00:05:57,372 --> 00:06:00,072
+Afterward, the government took his belongings
+
+153
+00:06:00,072 --> 00:06:01,332
+and papers.
+
+154
+00:06:03,882 --> 00:06:05,832
+Now fast forward sixty years.
+
+155
+00:06:05,832 --> 00:06:07,893
+July 1st, 2003.
+
+156
+00:06:07,893 --> 00:06:10,552
+Two engineers in California, Martin Eberhard
+
+157
+00:06:10,552 --> 00:06:13,091
+and Marc Tarpenning, start an electric car
+
+158
+00:06:13,091 --> 00:06:14,175
+company.
+
+159
+00:06:14,425 --> 00:06:16,956
+Eberhard is credited with choosing the name:
+
+160
+00:06:16,956 --> 00:06:17,704
+Tesla Motors.
+
+161
+00:06:17,704 --> 00:06:19,344
+A tribute to the inventor.
+
+162
+00:06:19,344 --> 00:06:21,754
+But also a perfect fit, because their first
+
+163
+00:06:21,754 --> 00:06:23,828
+car, the Roadster, would run on an AC
+
+164
+00:06:23,828 --> 00:06:24,725
+induction motor.
+
+165
+00:06:24,725 --> 00:06:28,861
+The same kind of motor Tesla patented in 1888.
+
+166
+00:06:29,111 --> 00:06:31,571
+Elon Musk joined in 2004.
+
+167
+00:06:31,571 --> 00:06:34,778
+He led the first big funding round, with $6.5
+
+168
+00:06:34,778 --> 00:06:38,056
+million of his own money, and became chairman.
+
+169
+00:06:38,056 --> 00:06:40,389
+Later, he became the CEO.
+
+170
+00:06:40,639 --> 00:06:43,807
+The Roadster finally hit the road in 2008.
+
+171
+00:06:43,807 --> 00:06:47,115
+Only about 2,500 were ever built.
+
+172
+00:06:47,365 --> 00:06:50,014
+It was built on a modified Lotus sports car
+
+173
+00:06:50,014 --> 00:06:52,478
+chassis, packed with thousands of small,
+
+174
+00:06:52,478 --> 00:06:54,741
+laptop-style battery cells.
+
+175
+00:06:54,991 --> 00:06:56,436
+And then it got messy.
+
+176
+00:06:56,436 --> 00:06:57,468
+Eberhard sued.
+
+177
+00:06:57,468 --> 00:07:00,243
+The settlement, in 2009, allowed five people
+
+178
+00:07:00,243 --> 00:07:03,745
+to call themselves co-founders, Musk included.
+
+179
+00:07:03,995 --> 00:07:06,173
+Here's the part that sounds made up.
+
+180
+00:07:06,173 --> 00:07:08,595
+For years, the company didn't even own
+
+181
+00:07:08,595 --> 00:07:09,233
+tesla.com.
+
+182
+00:07:09,233 --> 00:07:12,300
+That address had belonged to a man named Stu
+
+183
+00:07:12,300 --> 00:07:13,693
+Grossman since 1992.
+
+184
+00:07:13,693 --> 00:07:16,338
+Tesla finally got it in 2016.
+
+185
+00:07:16,338 --> 00:07:19,329
+Musk later said it cost $11 million, and took
+
+186
+00:07:19,329 --> 00:07:21,191
+more than a decade.
+
+187
+00:07:21,441 --> 00:07:25,045
+In 2017, the company dropped "Motors" from its
+
+188
+00:07:25,045 --> 00:07:25,437
+name.
+
+189
+00:07:25,437 --> 00:07:27,711
+Today, it's simply Tesla.
+
+190
+00:07:28,261 --> 00:07:30,005
+So here's the full circle.
+
+191
+00:07:30,005 --> 00:07:32,540
+A man who died broke, in debt, alone in a
+
+192
+00:07:32,540 --> 00:07:33,820
+hotel room.
+
+193
+00:07:34,070 --> 00:07:36,524
+And more than a century after he patented his
+
+194
+00:07:36,524 --> 00:07:38,979
+motor, his name became one of the most famous
+
+195
+00:07:38,979 --> 00:07:40,670
+brands in the world.
+
+196
+00:07:41,220 --> 00:07:42,498
+No way.
+
+197
+00:07:43,248 --> 00:07:45,818
+If you want more true stories that sound made
+
+198
+00:07:45,818 --> 00:07:46,617
+up, subscribe.
+
+199
+00:07:46,617 --> 00:07:49,062
+And if you liked this one, watch another one
+
+200
+00:07:49,062 --> 00:07:51,007
+next, because they're just as wild.
+

@@ -1,0 +1,1048 @@
+{
+ "paragraphs": [
+  {
+   "id": "c1",
+   "section": "cold",
+   "start": 0.6,
+   "dur": 4.422291666666666,
+   "sentences": [
+    [
+     0.6,
+     4.872291666666666,
+     "The most famous name in electric cars belongs to a man who died broke."
+    ]
+   ]
+  },
+  {
+   "id": "c2",
+   "section": "cold",
+   "start": 5.722291666666666,
+   "dur": 10.439958333333333,
+   "sentences": [
+    [
+     5.722291666666666,
+     8.156475358422938,
+     "January 7th, 1943."
+    ],
+    [
+     8.156475358422938,
+     9.262922491039426,
+     "New York City."
+    ],
+    [
+     9.262922491039426,
+     16.012249999999998,
+     "In room 3327 of the Hotel New Yorker, an 86-year-old inventor dies alone, deep in debt."
+    ]
+   ]
+  },
+  {
+   "id": "c3",
+   "section": "cold",
+   "start": 16.86225,
+   "dur": 8.343,
+   "sentences": [
+    [
+     16.86225,
+     21.35156506849315,
+     "Sixty years later, a startup in California puts his name on a car company."
+    ],
+    [
+     21.35156506849315,
+     25.05525,
+     "Today, it's one of the most valuable car companies on Earth."
+    ]
+   ]
+  },
+  {
+   "id": "c5",
+   "section": "cold",
+   "start": 25.90525,
+   "dur": 6.63275,
+   "sentences": [
+    [
+     25.90525,
+     27.308233208955222,
+     "And the strangest part?"
+    ],
+    [
+     27.308233208955222,
+     31.226910447761192,
+     "For years, the company named after him didn't even own its own name online."
+    ],
+    [
+     31.226910447761192,
+     32.388,
+     "We'll get to that."
+    ]
+   ]
+  },
+  {
+   "id": "c4",
+   "section": "cold",
+   "start": 33.238,
+   "dur": 4.193125,
+   "sentences": [
+    [
+     33.238,
+     35.2595625,
+     "This is the story of Nikola Tesla."
+    ],
+    [
+     35.2595625,
+     37.281125,
+     "The man, the myths, and the brand."
+    ]
+   ]
+  },
+  {
+   "id": "m1",
+   "section": "man",
+   "start": 42.431125,
+   "dur": 11.5145,
+   "sentences": [
+    [
+     42.431125,
+     48.72021723300971,
+     "Nikola Tesla was born in 1856, in a small village in what is now Croatia, to a Serbian family."
+    ],
+    [
+     48.72021723300971,
+     50.37524150485437,
+     "His father was a priest."
+    ],
+    [
+     50.37524150485437,
+     53.795625,
+     "His mother, he said, invented gadgets for the household."
+    ]
+   ]
+  },
+  {
+   "id": "m2",
+   "section": "man",
+   "start": 54.645625,
+   "dur": 8.85025,
+   "sentences": [
+    [
+     54.645625,
+     63.34587500000001,
+     "He studied engineering, worked for telephone and electric companies in Europe, and in 1884, he sailed to New York, with almost nothing in his pockets."
+    ]
+   ]
+  },
+  {
+   "id": "m7",
+   "section": "man",
+   "start": 64.195875,
+   "dur": 6.9290416666666665,
+   "sentences": [
+    [
+     64.195875,
+     65.7712860915493,
+     "He had a remarkable memory."
+    ],
+    [
+     65.7712860915493,
+     70.97491666666667,
+     "He claimed he could picture entire machines in his head, and test them there, before building anything."
+    ]
+   ]
+  },
+  {
+   "id": "m3",
+   "section": "man",
+   "start": 71.82491666666667,
+   "dur": 2.8642916666666665,
+   "sentences": [
+    [
+     71.82491666666667,
+     74.53920833333333,
+     "He landed a job working for Thomas Edison."
+    ]
+   ]
+  },
+  {
+   "id": "m4",
+   "section": "man",
+   "start": 75.38920833333333,
+   "dur": 13.565291666666667,
+   "sentences": [
+    [
+     75.38920833333333,
+     78.33531160130718,
+     "And this is where the first famous story comes in."
+    ],
+    [
+     78.33531160130718,
+     83.33316535947712,
+     "According to Tesla, Edison promised him $50,000 to improve his generators."
+    ],
+    [
+     83.33316535947712,
+     88.80449999999999,
+     "When Tesla delivered, Edison supposedly laughed, and told him he didn't understand American humor."
+    ]
+   ]
+  },
+  {
+   "id": "m5",
+   "section": "man",
+   "start": 89.6545,
+   "dur": 6.764458333333334,
+   "sentences": [
+    [
+     89.6545,
+     93.87317027559055,
+     "That story comes from Tesla himself, and some historians doubt the details."
+    ],
+    [
+     93.87317027559055,
+     96.26895833333333,
+     "But either way, he quit within the year."
+    ]
+   ]
+  },
+  {
+   "id": "m6",
+   "section": "man",
+   "start": 97.11895833333334,
+   "dur": 5.896208333333333,
+   "sentences": [
+    [
+     97.11895833333334,
+     99.57460292022793,
+     "His first company of his own pushed him out."
+    ],
+    [
+     99.57460292022793,
+     102.86516666666667,
+     "By his own account, he ended up digging ditches for a living."
+    ]
+   ]
+  },
+  {
+   "id": "o1",
+   "section": "motor",
+   "start": 105.61516666666667,
+   "dur": 10.108416666666667,
+   "sentences": [
+    [
+     105.61516666666667,
+     115.57358333333333,
+     "But Tesla had an idea he'd carried since his student days: a motor that ran on alternating current, with no brushes and no sparking contacts, almost nothing to wear out."
+    ]
+   ]
+  },
+  {
+   "id": "o2",
+   "section": "motor",
+   "start": 116.42358333333334,
+   "dur": 14.132375,
+   "sentences": [
+    [
+     116.42358333333334,
+     119.76028645833334,
+     "The trick was something called a rotating magnetic field."
+    ],
+    [
+     119.76028645833334,
+     126.75147395833334,
+     "Feed alternating currents into coils around a ring, slightly out of step with each other, and the magnetic field itself spins."
+    ],
+    [
+     126.75147395833334,
+     130.40595833333333,
+     "Put a metal rotor in the middle, and the field drags it around."
+    ]
+   ]
+  },
+  {
+   "id": "o3",
+   "section": "motor",
+   "start": 131.25595833333335,
+   "dur": 6.963375,
+   "sentences": [
+    [
+     131.25595833333335,
+     138.06933333333336,
+     "In 1888, he patented his AC induction motor, and presented it to the country's top electrical engineers."
+    ]
+   ]
+  },
+  {
+   "id": "o4",
+   "section": "motor",
+   "start": 138.91933333333336,
+   "dur": 9.783041666666668,
+   "sentences": [
+    [
+     138.91933333333336,
+     142.2808634982639,
+     "One man was paying very close attention: George Westinghouse."
+    ],
+    [
+     142.2808634982639,
+     144.73929600694447,
+     "He licensed Tesla's patents, and hired him."
+    ],
+    [
+     144.73929600694447,
+     146.04377039930557,
+     "Remember this motor."
+    ],
+    [
+     146.04377039930557,
+     148.552375,
+     "It's coming back, more than a century later."
+    ]
+   ]
+  },
+  {
+   "id": "x1",
+   "section": "war",
+   "start": 151.50237500000003,
+   "dur": 6.205125,
+   "sentences": [
+    [
+     151.50237500000003,
+     153.11381955645163,
+     "There was just one problem."
+    ],
+    [
+     153.11381955645163,
+     157.55750000000003,
+     "Edison had bet everything on direct current, and he wasn't giving up without a fight."
+    ]
+   ]
+  },
+  {
+   "id": "x2",
+   "section": "war",
+   "start": 158.40750000000003,
+   "dur": 9.350791666666666,
+   "sentences": [
+    [
+     158.40750000000003,
+     161.15651702235775,
+     "It became known as the War of the Currents."
+    ],
+    [
+     161.15651702235775,
+     167.6082916666667,
+     "Edison's camp warned that alternating current was deadly, and pointed to its use in the first electric chair."
+    ]
+   ]
+  },
+  {
+   "id": "x8",
+   "section": "war",
+   "start": 168.4582916666667,
+   "dur": 8.359125,
+   "sentences": [
+    [
+     168.4582916666667,
+     176.6674166666667,
+     "An engineer allied with Edison's side even electrocuted animals in public demonstrations, to show how dangerous AC could be."
+    ]
+   ]
+  },
+  {
+   "id": "x9",
+   "section": "war",
+   "start": 177.5174166666667,
+   "dur": 7.825708333333333,
+   "sentences": [
+    [
+     177.5174166666667,
+     179.5878379934211,
+     "Tesla fought back with showmanship."
+    ],
+    [
+     179.5878379934211,
+     185.193125,
+     "In his lectures, he let high-frequency current pass through his own body, lighting up lamps in his hands."
+    ]
+   ]
+  },
+  {
+   "id": "x3",
+   "section": "war",
+   "start": 186.04312500000003,
+   "dur": 6.8189166666666665,
+   "sentences": [
+    [
+     186.04312500000003,
+     187.88101541994754,
+     "But AC had a huge advantage."
+    ],
+    [
+     187.88101541994754,
+     190.5065731627297,
+     "It could be sent long distances efficiently."
+    ],
+    [
+     190.5065731627297,
+     192.7120416666667,
+     "Direct current, back then, couldn't."
+    ]
+   ]
+  },
+  {
+   "id": "x4",
+   "section": "war",
+   "start": 193.5620416666667,
+   "dur": 8.906666666666666,
+   "sentences": [
+    [
+     193.5620416666667,
+     197.77618750000002,
+     "In 1893, Westinghouse lit up the Chicago World's Fair."
+    ],
+    [
+     197.77618750000002,
+     202.31870833333335,
+     "Millions of visitors saw a glowing white city running on alternating current."
+    ]
+   ]
+  },
+  {
+   "id": "x5",
+   "section": "war",
+   "start": 203.16870833333334,
+   "dur": 9.173333333333334,
+   "sentences": [
+    [
+     203.16870833333334,
+     204.77048348126235,
+     "Then came Niagara Falls."
+    ],
+    [
+     204.77048348126235,
+     212.19204166666668,
+     "In 1896, power generated at the falls, using Tesla's system, reached the city of Buffalo, more than 20 miles away."
+    ]
+   ]
+  },
+  {
+   "id": "x6",
+   "section": "war",
+   "start": 213.04204166666668,
+   "dur": 4.659041666666667,
+   "sentences": [
+    [
+     213.04204166666668,
+     214.49657123655916,
+     "Alternating current won."
+    ],
+    [
+     214.49657123655916,
+     217.55108333333334,
+     "It's the kind of power coming out of your wall right now."
+    ]
+   ]
+  },
+  {
+   "id": "x7",
+   "section": "war",
+   "start": 218.40108333333333,
+   "dur": 2.2844166666666665,
+   "sentences": [
+    [
+     218.40108333333333,
+     220.5355,
+     "So Tesla should have been rich, right?"
+    ]
+   ]
+  },
+  {
+   "id": "f1",
+   "section": "fall",
+   "start": 224.6855,
+   "dur": 12.779041666666666,
+   "sentences": [
+    [
+     224.6855,
+     226.35922841365462,
+     "Here's where it goes wrong."
+    ],
+    [
+     226.35922841365462,
+     229.40237098393573,
+     "Westinghouse's company ran into serious money trouble."
+    ],
+    [
+     229.40237098393573,
+     237.31454166666666,
+     "Tesla agreed to give up his royalties, and in 1897, he took a lump sum of about $216,000 for his patents."
+    ]
+   ]
+  },
+  {
+   "id": "f2",
+   "section": "fall",
+   "start": 238.16454166666665,
+   "dur": 6.513958333333333,
+   "sentences": [
+    [
+     238.16454166666665,
+     240.9205866141732,
+     "That was a lot of money in 1897."
+    ],
+    [
+     240.9205866141732,
+     244.52849999999998,
+     "But it was a tiny slice of what those royalties could have become."
+    ]
+   ]
+  },
+  {
+   "id": "f7",
+   "section": "fall",
+   "start": 245.37849999999997,
+   "dur": 6.35625,
+   "sentences": [
+    [
+     245.37849999999997,
+     251.58474999999999,
+     "And in 1895, a fire tore through his New York laboratory, destroying years of equipment and notes."
+    ]
+   ]
+  },
+  {
+   "id": "f3",
+   "section": "fall",
+   "start": 252.43474999999998,
+   "dur": 11.552125,
+   "sentences": [
+    [
+     252.43474999999998,
+     255.85538749999998,
+     "Then Tesla went all in on his biggest dream: wireless power."
+    ],
+    [
+     255.85538749999998,
+     262.7484903409091,
+     "On Long Island, he built a giant tower called Wardenclyffe, funded with $150,000 from the banker J."
+    ],
+    [
+     262.7484903409091,
+     263.1631130681818,
+     "P."
+    ],
+    [
+     263.1631130681818,
+     263.83687499999996,
+     "Morgan."
+    ]
+   ]
+  },
+  {
+   "id": "f4",
+   "section": "fall",
+   "start": 264.686875,
+   "dur": 8.358875,
+   "sentences": [
+    [
+     264.686875,
+     269.70631449044583,
+     "The plan was to send messages, and eventually power, through the air and the earth itself."
+    ],
+    [
+     269.70631449044583,
+     272.89574999999996,
+     "But the money ran out, and Morgan wouldn't invest more."
+    ]
+   ]
+  },
+  {
+   "id": "f5",
+   "section": "fall",
+   "start": 273.74575,
+   "dur": 7.899958333333333,
+   "sentences": [
+    [
+     273.74575,
+     275.81240555555553,
+     "The tower never did what he hoped."
+    ],
+    [
+     275.81240555555553,
+     281.4957083333333,
+     "Tesla lost the property to his creditors, and in 1917, the tower was demolished for scrap."
+    ]
+   ]
+  },
+  {
+   "id": "f6",
+   "section": "fall",
+   "start": 282.34570833333333,
+   "dur": 8.820416666666667,
+   "sentences": [
+    [
+     282.34570833333333,
+     291.016125,
+     "For the rest of his life, Tesla moved from hotel to hotel, often behind on the bills, feeding pigeons, and announcing inventions that never appeared."
+    ]
+   ]
+  },
+  {
+   "id": "f8",
+   "section": "fall",
+   "start": 291.866125,
+   "dur": 5.325916666666667,
+   "sentences": [
+    [
+     291.866125,
+     297.0420416666667,
+     "He even told his biographer that he loved one white pigeon, the way a man loves a woman."
+    ]
+   ]
+  },
+  {
+   "id": "y1",
+   "section": "myths",
+   "start": 299.9920416666667,
+   "dur": 3.471625,
+   "sentences": [
+    [
+     299.9920416666667,
+     302.1336156798246,
+     "And that's where the myths start piling up."
+    ],
+    [
+     302.1336156798246,
+     303.3136666666667,
+     "Let's sort out a few."
+    ]
+   ]
+  },
+  {
+   "id": "y2",
+   "section": "myths",
+   "start": 304.1636666666667,
+   "dur": 12.357791666666667,
+   "sentences": [
+    [
+     304.1636666666667,
+     309.3037894736842,
+     "Myth number one: Tesla tore up a contract worth billions, to save his friend Westinghouse."
+    ],
+    [
+     309.3037894736842,
+     313.26596747076024,
+     "What we can document is the buyout: a lump sum instead of royalties."
+    ],
+    [
+     313.26596747076024,
+     316.37145833333335,
+     "The dramatic tearing moment is much harder to prove."
+    ]
+   ]
+  },
+  {
+   "id": "y3",
+   "section": "myths",
+   "start": 317.2214583333334,
+   "dur": 10.288791666666667,
+   "sentences": [
+    [
+     317.2214583333334,
+     319.49751360544224,
+     "Myth number two: he built a death ray."
+    ],
+    [
+     319.49751360544224,
+     325.0841947278912,
+     "In the 1930s, he told reporters he'd designed a beam that could stop armies from far away."
+    ],
+    [
+     325.0841947278912,
+     327.36025000000006,
+     "There's no evidence he ever built one."
+    ]
+   ]
+  },
+  {
+   "id": "y4",
+   "section": "myths",
+   "start": 328.21025000000003,
+   "dur": 14.97025,
+   "sentences": [
+    [
+     328.21025000000003,
+     332.68428773584907,
+     "Myth number three: the Supreme Court declared Tesla the inventor of radio."
+    ],
+    [
+     332.68428773584907,
+     340.06645000000003,
+     "In 1943, the court did knock out key parts of Marconi's radio patent, citing earlier work by Tesla and others."
+    ],
+    [
+     340.06645000000003,
+     343.0305,
+     "But it never named Tesla the inventor of radio."
+    ]
+   ]
+  },
+  {
+   "id": "y5",
+   "section": "myths",
+   "start": 343.88050000000004,
+   "dur": 9.698583333333334,
+   "sentences": [
+    [
+     343.88050000000004,
+     346.34302938596494,
+     "And the big one: Tesla invented everything."
+    ],
+    [
+     346.34302938596494,
+     347.14712061403515,
+     "He didn't."
+    ],
+    [
+     347.14712061403515,
+     350.06195131578954,
+     "But he did help build the electric world we live in."
+    ],
+    [
+     350.06195131578954,
+     353.4290833333334,
+     "There's even a scientific unit of magnetism called the tesla."
+    ]
+   ]
+  },
+  {
+   "id": "y6",
+   "section": "myths",
+   "start": 354.27908333333335,
+   "dur": 6.603458333333333,
+   "sentences": [
+    [
+     354.27908333333335,
+     357.372476584022,
+     "He died in 1943, in that hotel room."
+    ],
+    [
+     357.372476584022,
+     360.7325416666667,
+     "Afterward, the government took his belongings and papers."
+    ]
+   ]
+  },
+  {
+   "id": "n1",
+   "section": "name",
+   "start": 363.8825416666667,
+   "dur": 9.842625,
+   "sentences": [
+    [
+     363.8825416666667,
+     365.8322076149426,
+     "Now fast forward sixty years."
+    ],
+    [
+     365.8322076149426,
+     367.89328304597706,
+     "July 1st, 2003."
+    ],
+    [
+     367.89328304597706,
+     373.57516666666675,
+     "Two engineers in California, Martin Eberhard and Marc Tarpenning, start an electric car company."
+    ]
+   ]
+  },
+  {
+   "id": "n2",
+   "section": "name",
+   "start": 374.4251666666667,
+   "dur": 13.985916666666666,
+   "sentences": [
+    [
+     374.4251666666667,
+     377.70479135802475,
+     "Eberhard is credited with choosing the name: Tesla Motors."
+    ],
+    [
+     377.70479135802475,
+     379.34460370370374,
+     "A tribute to the inventor."
+    ],
+    [
+     379.34460370370374,
+     384.72523796296304,
+     "But also a perfect fit, because their first car, the Roadster, would run on an AC induction motor."
+    ],
+    [
+     384.72523796296304,
+     388.2610833333334,
+     "The same kind of motor Tesla patented in 1888."
+    ]
+   ]
+  },
+  {
+   "id": "n3",
+   "section": "name",
+   "start": 389.1110833333334,
+   "dur": 10.828458333333334,
+   "sentences": [
+    [
+     389.1110833333334,
+     391.571042321117,
+     "Elon Musk joined in 2004."
+    ],
+    [
+     391.571042321117,
+     398.05638874345556,
+     "He led the first big funding round, with $6.5 million of his own money, and became chairman."
+    ],
+    [
+     398.05638874345556,
+     399.7895416666667,
+     "Later, he became the CEO."
+    ]
+   ]
+  },
+  {
+   "id": "n7",
+   "section": "name",
+   "start": 400.63954166666673,
+   "dur": 6.025666666666667,
+   "sentences": [
+    [
+     400.63954166666673,
+     403.80729239130443,
+     "The Roadster finally hit the road in 2008."
+    ],
+    [
+     403.80729239130443,
+     406.5152083333334,
+     "Only about 2,500 were ever built."
+    ]
+   ]
+  },
+  {
+   "id": "n8",
+   "section": "name",
+   "start": 407.3652083333334,
+   "dur": 6.926666666666667,
+   "sentences": [
+    [
+     407.3652083333334,
+     414.141875,
+     "It was built on a modified Lotus sports car chassis, packed with thousands of small, laptop-style battery cells."
+    ]
+   ]
+  },
+  {
+   "id": "n4",
+   "section": "name",
+   "start": 414.99187500000005,
+   "dur": 8.303291666666667,
+   "sentences": [
+    [
+     414.99187500000005,
+     416.43676213080175,
+     "And then it got messy."
+    ],
+    [
+     416.43676213080175,
+     417.46882436708864,
+     "Eberhard sued."
+    ],
+    [
+     417.46882436708864,
+     423.14516666666674,
+     "The settlement, in 2009, allowed five people to call themselves co-founders, Musk included."
+    ]
+   ]
+  },
+  {
+   "id": "n5",
+   "section": "name",
+   "start": 423.9951666666667,
+   "dur": 16.746708333333334,
+   "sentences": [
+    [
+     423.9951666666667,
+     426.1734846354167,
+     "Here's the part that sounds made up."
+    ],
+    [
+     426.1734846354167,
+     429.23350273437507,
+     "For years, the company didn't even own tesla.com."
+    ],
+    [
+     429.23350273437507,
+     433.6938680989584,
+     "That address had belonged to a man named Stu Grossman since 1992."
+    ],
+    [
+     433.6938680989584,
+     436.33896848958335,
+     "Tesla finally got it in 2016."
+    ],
+    [
+     436.33896848958335,
+     440.591875,
+     "Musk later said it cost $11 million, and took more than a decade."
+    ]
+   ]
+  },
+  {
+   "id": "n6",
+   "section": "name",
+   "start": 441.44187500000004,
+   "dur": 5.819583333333333,
+   "sentences": [
+    [
+     441.44187500000004,
+     445.43758134920637,
+     "In 2017, the company dropped \"Motors\" from its name."
+    ],
+    [
+     445.43758134920637,
+     447.11145833333336,
+     "Today, it's simply Tesla."
+    ]
+   ]
+  },
+  {
+   "id": "q1",
+   "section": "outro",
+   "start": 448.2614583333334,
+   "dur": 5.109125,
+   "sentences": [
+    [
+     448.2614583333334,
+     450.0053264652015,
+     "So here's the full circle."
+    ],
+    [
+     450.0053264652015,
+     453.22058333333337,
+     "A man who died broke, in debt, alone in a hotel room."
+    ]
+   ]
+  },
+  {
+   "id": "q2",
+   "section": "outro",
+   "start": 454.0705833333334,
+   "dur": 6.149416666666666,
+   "sentences": [
+    [
+     454.0705833333334,
+     460.07000000000005,
+     "And more than a century after he patented his motor, his name became one of the most famous brands in the world."
+    ]
+   ]
+  },
+  {
+   "id": "q3",
+   "section": "outro",
+   "start": 461.22,
+   "dur": 0.828875,
+   "sentences": [
+    [
+     461.22,
+     461.89887500000003,
+     "No way."
+    ]
+   ]
+  },
+  {
+   "id": "q4",
+   "section": "outro",
+   "start": 463.24887500000006,
+   "dur": 7.908791666666667,
+   "sentences": [
+    [
+     463.24887500000006,
+     466.61782401315793,
+     "If you want more true stories that sound made up, subscribe."
+    ],
+    [
+     466.61782401315793,
+     471.0076666666667,
+     "And if you liked this one, watch another one next, because they're just as wild."
+    ]
+   ]
+  }
+ ],
+ "sections": {
+  "cold": [
+   0.6,
+   38.231125
+  ],
+  "title": [
+   38.231125,
+   40.831125
+  ],
+  "man": [
+   40.831125,
+   104.01516666666667
+  ],
+  "motor": [
+   104.01516666666667,
+   149.90237500000003
+  ],
+  "war": [
+   149.90237500000003,
+   223.0855
+  ],
+  "fall": [
+   223.0855,
+   298.39204166666667
+  ],
+  "myths": [
+   298.39204166666667,
+   362.2825416666667
+  ],
+  "name": [
+   362.2825416666667,
+   448.2614583333334
+  ],
+  "outro": [
+   448.2614583333334,
+   486.45766666666674
+  ]
+ },
+ "chapters": [
+  [
+   40.831125,
+   42.431125,
+   "THE IMMIGRANT"
+  ],
+  [
+   104.01516666666667,
+   105.61516666666667,
+   "THE MOTOR"
+  ],
+  [
+   149.90237500000003,
+   151.50237500000003,
+   "THE WAR OF THE CURRENTS"
+  ],
+  [
+   223.0855,
+   224.6855,
+   "THE FALL"
+  ],
+  [
+   298.39204166666667,
+   299.9920416666667,
+   "MYTH VS. FACT"
+  ],
+  [
+   362.2825416666667,
+   363.8825416666667,
+   "THE NAME RETURNS"
+  ]
+ ],
+ "duration": 486.46
+}
