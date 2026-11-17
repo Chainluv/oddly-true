@@ -42,3 +42,4 @@ Each episode folder holds the finished MP4 plus the code that renders it.
 | Video | File |
 |---|---|
 | The Great Molasses Flood (8:07, 16:9) | [`molasses-long/no-way-molasses-flood-long.mp4`](molasses-long/no-way-molasses-flood-long.mp4) · [captions](molasses-long/no-way-molasses-flood-long.srt) |
+| Nikola Tesla: The Man vs. the Brand (8:06, 16:9) | [`tesla-long/no-way-tesla-long.mp4`](tesla-long/no-way-tesla-long.mp4) · [captions](tesla-long/no-way-tesla-long.srt) |
