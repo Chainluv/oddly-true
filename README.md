@@ -36,3 +36,9 @@ Each episode folder holds the finished MP4 plus the code that renders it.
 | Story | Video |
 |---|---|
 | He Quit. Now a Comeback? — Jensen Huang / Nvidia (reported Nov 16, 2026, 45s) | [`huang-comeback/no-way-huang-comeback.mp4`](huang-comeback/no-way-huang-comeback.mp4) |
+
+## Long form
+
+| Video | File |
+|---|---|
+| The Great Molasses Flood (8:21, 16:9) | [`molasses-long/no-way-molasses-flood-long.mp4`](molasses-long/no-way-molasses-flood-long.mp4) · [captions](molasses-long/no-way-molasses-flood-long.srt) |
