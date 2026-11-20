@@ -37,6 +37,7 @@ Each episode folder holds the finished MP4 plus the code that renders it.
 | Story | Video |
 |---|---|
 | He Quit. Now a Comeback? — Jensen Huang / Nvidia (reported Nov 16, 2026, 45s) | [`huang-comeback/no-way-huang-comeback.mp4`](huang-comeback/no-way-huang-comeback.mp4) |
+| The $1.5 Trillion Breakup — Anthropic's IPO (Nov 19, 2026, 73s) | [`anthropic-ipo/no-way-anthropic-ipo.mp4`](anthropic-ipo/no-way-anthropic-ipo.mp4) |
 
 ## Long form
 
