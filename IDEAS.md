@@ -8,7 +8,7 @@ Rules for adding ideas are in `CLAUDE.md`:
 ## Series numbers
 | Series | Next # | Made so far |
 |---|---|---|
-| America's Forgotten Attacks | 1 | (none yet) |
+| America's Forgotten Attacks | 2 | #1 Black Tom explosion (`black-tom/`) |
 | Petty Crimes, Massive Damage | 1 | (none yet) |
 | Numbers That Shouldn't Be Real | 1 | (none yet) |
 | Black Markets for Normal Things | 1 | (none yet) |
@@ -18,7 +18,7 @@ Rules for adding ideas are in `CLAUDE.md`:
 ## Queue (sources not verified yet; score before scripting)
 | # | Idea | Series | Hook / angle | Visual plan | Notes |
 |---|---|---|---|---|---|
-| 1 | Black Tom explosion (1916, Jersey City) | America's Forgotten Attacks | "This is why you can't go up the Statue of Liberty's torch." | Shockwave map pulsing NJ→PA→MD, a 2:08 a.m. clock, a payment timeline 1916→1979 | |
+| 1 | ~~Black Tom explosion (1916, Jersey City)~~ **MADE** (`black-tom/`, 23/25) | America's Forgotten Attacks | "This is why you can't go up the Statue of Liberty's torch." | Shockwave map pulsing NJ→PA→MD, a 2:08 a.m. clock, a payment timeline 1916→1979 | |
 | 2 | James Scott and the West Quincy levee (1993) | Petty Crimes, Massive Damage | Allegedly flooded 14,000 acres to strand his wife | Flood spreading across a map, an acreage counter | His guilt is disputed: end on "Guilty?" and say "allegedly" throughout |
 | 3 | China National Highway 110 traffic jam (2010) | Numbers That Shouldn't Be Real | A 100+ km jam moving about 1 km a day | A jam line growing on a map, a speed counter, water price 1 → 15 yuan | |
 | 4 | Norwegian butter crisis (2011) | Black Markets for Normal Things | Lurpak at NOK 300, butter smugglers | A price chart spiking, a border-crossing map, the Danish TV "emergency appeal" | |

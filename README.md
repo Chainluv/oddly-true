@@ -40,6 +40,7 @@ Each episode folder holds the finished MP4 plus the code that renders it.
 | He Quit. Now a Comeback? — Jensen Huang / Nvidia (reported Nov 16, 2026, 45s) | [`huang-comeback/no-way-huang-comeback.mp4`](huang-comeback/no-way-huang-comeback.mp4) |
 | The $1.5 Trillion Breakup — Anthropic's IPO (Nov 19, 2026, 73s) | [`anthropic-ipo/no-way-anthropic-ipo.mp4`](anthropic-ipo/no-way-anthropic-ipo.mp4) |
 | GTA 6's $3.79 Billion Day (Nov 19, 2026, 60s) | [`gta6-launch/no-way-gta6-launch.mp4`](gta6-launch/no-way-gta6-launch.mp4) |
+| America's Forgotten Attacks #1 — The Day Germany Bombed New Jersey (1916, 48s) | [`black-tom/no-way-black-tom.mp4`](black-tom/no-way-black-tom.mp4) |
 
 ## Long form
 
