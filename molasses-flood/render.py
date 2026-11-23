@@ -76,26 +76,39 @@ def draw_text_stroke(d, xy, text, f, fill, stroke=9, shadow=True):
     d.text(xy, text, font=f, fill=fill, stroke_width=stroke, stroke_fill=(0, 0, 0))
 
 
+# Caption safe zone (see CLAUDE.md): centered, clear of the bottom 20% (y > 1536) and of the right-edge Shorts buttons.
+CAP_Y = 1300          # top of the first caption line
+CAP_SIZE = 112        # font size; shrinks automatically when a line would leave the safe width
+CAP_MAX_W = W - 300   # 150 px clear on each side
+
+
 def caption_layer(t):
-    """Bold, word-synced captions in the lower-middle safe zone."""
+    """Bold, word-synced captions, big and centered in the safe zone."""
     for start, end, ws in CHUNKS:
         if start <= t < end:
             break
     else:
         return None
-    f = font("anton", 112)
+    size = CAP_SIZE
+    f = font("anton", size)
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(layer)
     space = 26
     widths = [d.textlength(w, font=f) for w, _, _ in ws]
     total = sum(widths) + space * (len(ws) - 1)
     lines = [list(range(len(ws)))]
-    if total > W - 140:
+    if total > CAP_MAX_W:
         mid = len(ws) // 2 + (len(ws) % 2)
         lines = [list(range(mid)), list(range(mid, len(ws)))]
+    widest = max(sum(widths[i] for i in idxs) + space * (len(idxs) - 1) for idxs in lines)
+    if widest > CAP_MAX_W:  # shrink to fit rather than spill toward the edges
+        size = int(size * CAP_MAX_W / widest)
+        f = font("anton", size)
+        space = int(26 * size / CAP_SIZE)
+        widths = [d.textlength(w, font=f) for w, _, _ in ws]
     pop = ease_out_back((t - start) / 0.16, 2.2)
     sc = 0.7 + 0.3 * pop
-    y0 = 1300 - (len(lines) - 1) * 70
+    y0 = CAP_Y - (len(lines) - 1) * 70
     for li, idxs in enumerate(lines):
         lw = sum(widths[i] for i in idxs) + space * (len(idxs) - 1)
         x = (W - lw) / 2
@@ -105,7 +118,7 @@ def caption_layer(t):
             col = AMBER if (w in KEYWORDS or active) else (255, 255, 255)
             if active and w in KEYWORDS:
                 col = (255, 214, 120)
-            d.text((x, y0 + li * 140), w, font=f, fill=col + (255,), stroke_width=10, stroke_fill=(0, 0, 0, 255))
+            d.text((x, y0 + li * int(140 * size / CAP_SIZE)), w, font=f, fill=col + (255,), stroke_width=10, stroke_fill=(0, 0, 0, 255))
             x += widths[i] + space
     # soft shadow + pop scale
     sh = layer.split()[3].filter(ImageFilter.GaussianBlur(14))
