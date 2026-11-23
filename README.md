@@ -41,6 +41,7 @@ Each episode folder holds the finished MP4 plus the code that renders it.
 | The $1.5 Trillion Breakup — Anthropic's IPO (Nov 19, 2026, 73s) | [`anthropic-ipo/no-way-anthropic-ipo.mp4`](anthropic-ipo/no-way-anthropic-ipo.mp4) |
 | GTA 6's $3.79 Billion Day (Nov 19, 2026, 60s) | [`gta6-launch/no-way-gta6-launch.mp4`](gta6-launch/no-way-gta6-launch.mp4) |
 | America's Forgotten Attacks #1 — The Day Germany Bombed New Jersey (1916, 48s) | [`black-tom/no-way-black-tom.mp4`](black-tom/no-way-black-tom.mp4) |
+| Petty Crimes, Massive Damage #1 — He Flooded a Town to Keep His Wife Away? (1993, 50s) | [`levee-scott/no-way-levee-scott.mp4`](levee-scott/no-way-levee-scott.mp4) |
 
 ## Long form
 

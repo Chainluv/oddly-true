@@ -1,0 +1,27 @@
+# Sources: James Scott and the West Quincy levee (Petty Crimes, Massive Damage #1)
+
+His guilt is disputed. The video attributes the motive to witnesses ("witnesses say", "allegedly"), states the convictions as fact, and gives the defense's side.
+
+| Claim in the video | Source(s) |
+|---|---|
+| Convicted over the 1993 West Quincy levee break (the charge was "causing a catastrophe") | [Wikipedia: James Scott (criminal)](https://en.wikipedia.org/wiki/James_Scott_(criminal)); [Deseret News, 1994](https://www.deseret.com/1994/11/4/19140619/midwest-man-guilty-of-sabotaging-levee/); [KFVS12, 2026](https://www.kfvs12.com/2026/07/23/man-convicted-causing-catastrophe-seeks-parole-33-years-after-missouri-flood/) |
+| The 1993 Mississippi flood was historic | [NWS: The Great Flood of 1993](https://www.weather.gov/lsx/93flood); [Wikipedia: Great Flood of 1993](https://en.wikipedia.org/wiki/Great_Flood_of_1993) |
+| Scott was 23: born November 20, 1969 | Birth date from the episode brief (Wikipedia). It's consistent with Missouri DOC listing him as 56 in August 2026 ([Muddy River News](https://muddyrivernews.com/top-stories/james-scott-convicted-of-sabotaging-west-quincy-missouri-levee-in-1993-is-scheduled-for-release-in-july-of-2028-says-missouri-doc/20260804192316/)). One outlet calls him 24, which matches his age at the 1994 trial rather than in July 1993. |
+| He helped sandbag the West Quincy levee | [weather.com](https://weather.com/news/news/james-scott-west-quincy-levee-breach-20-years-ago-flood-1993-20130715); [ABC17 News](https://abc17news.com/news/2018/08/24/the-great-flood-of-1993-the-james-scott-story/) |
+| The levee broke on July 16, 1993, flooding about 14,000 acres | [weather.com](https://weather.com/news/news/james-scott-west-quincy-levee-breach-20-years-ago-flood-1993-20130715); [Geoengineer.org](https://geoengineer.org/news/levee-s-failure-in-1993-affects-a-man-s-life-until-today); [AOL](https://www.aol.com/articles/man-flooded-14-000-acres-194310481.html) |
+| The bridge to Quincy (the Bayview Bridge) closed for 71 days | [Wikipedia: James Scott (criminal)](https://en.wikipedia.org/wiki/James_Scott_(criminal)); other reports say it was "shut down for months" ([weather.com feature](https://features.weather.com/causing-a-catastrophe)) |
+| Suspicion followed his TV interview about moving sandbags on the levee; a Quincy police sergeant found his account suspicious | [Muddy River News](https://muddyrivernews.com/noteworthy/parole-hearing-proceeds-for-quincy-man-convicted-of-levee-sabotage-in-1993/20260723065303/); [Wikipedia](https://en.wikipedia.org/wiki/James_Scott_(criminal)) (Sgt. Neal Baker) |
+| Witnesses say he talked about breaking the levee to strand his wife on the Missouri side so he could keep partying | [Wikipedia](https://en.wikipedia.org/wiki/James_Scott_(criminal)) (witness Joe Flachs); [Quincy Herald-Whig](https://www.whig.com/archive/article/west-quincy-levee-break-recalling-the-tragedy-of-1993/article_4e643363-e41c-5ed7-afd8-540b9c0c370d.html) (four witnesses); [Now I Know](https://nowiknow.com/flood-for-your-right-to-party/) |
+| Life sentence; first conviction overturned; convicted again at a 1998 retrial | [Wikipedia](https://en.wikipedia.org/wiki/James_Scott_(criminal)); [Justice Denied](http://justicedenied.org/wordpress/archives/323) |
+| His defense argued the levee could have failed on its own; he says he didn't do it | [Justice Denied](http://justicedenied.org/wordpress/archives/323); [Muddy River News: expert witnesses](https://muddyrivernews.com/?p=169269); [weather.com](https://weather.com/news/news/james-scott-west-quincy-levee-breach-20-years-ago-flood-1993-20130715) |
+| More than a thousand levees failed in 1993 (about 1,083 overtopped or damaged: 40 federal, 1,043 non-federal) | [USGS](https://pubs.usgs.gov/fs/2004/3024/report.pdf); [NOAA/NWS summary](https://webarchive.library.unt.edu/web/20080922150541/http://www.crh.noaa.gov/pah/hydro/floodof93.php); [Live Science](https://www.livescience.com/7508-history-repeats-great-flood-1993.html) |
+| First parole hearing in July 2026; scheduled for release in July 2028 per the Missouri DOC | [KCTV5](https://www.kctv5.com/2026/07/22/missouri-man-convicted-causing-catastrophe-seeks-parole-33-years-after-flood/); [Muddy River News, Aug 4, 2026](https://muddyrivernews.com/top-stories/james-scott-convicted-of-sabotaging-west-quincy-missouri-levee-in-1993-is-scheduled-for-release-in-july-of-2028-says-missouri-doc/20260804192316/) |
+
+## Changes from the original script
+- **"Every bridge across the river for 200 miles is cut off for weeks"** was dropped because I found no source for it. It became "the bridge to Quincy closes for 71 days."
+- **"The river has actually started dropping"** was dropped because I couldn't verify it.
+- **"A detective sees Scott on the local news, standing at the break"** became "a police sergeant sees Scott on TV, talking about moving sandbags on that levee." The on-screen text paraphrases what he said rather than quoting him.
+- **"About 1,100 levees failed"** became "over a thousand levees". The records count about 1,083 overtopped or damaged.
+- **"Experts say his might have just been next in line"** became "his defense says it could have failed on its own."
+- **The scheduled 2028 release** (Missouri DOC, August 2026) was added as the final twist.
+- **The bridge and the levee-failure dots** are stylized and labeled "STYLIZED MAP".
