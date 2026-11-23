@@ -8,6 +8,7 @@ These rules apply to every episode and override an episode prompt when they conf
 - **Never include "Yep." or "It happened."** in the voiceover, captions or on-screen text, even if a prompt asks. The last spoken words are "No way." over the NO WAY. wordmark, unless a prompt explicitly asks for no spoken catchphrase.
 - Shorts are 1080×1920 and long form is 1920×1080. Both are 30 fps, H.264/AAC, −14 LUFS, and under 100 MB.
 - One video per folder, holding the MP4, its source, a README and `sources.md`. Add each new video to the table in `README.md`.
+- Add each new video as a post in `blog/index.html` (the `POSTS` array plus a preview clip and poster in `blog/media/`), and republish the blog.
 - No real likenesses, logos, game art or photos. Use generic figures and the show's own type, and label any reconstruction as one.
 
 ## Idea process

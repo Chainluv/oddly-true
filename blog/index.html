@@ -1,0 +1,474 @@
+<title>NO WAY. Files</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;700&family=Special+Elite&display=swap">
+<style>
+/* Layout: a film-grain case file. Masthead wordmark, a scrolling stat ticker, a 9:16 card wall of looping clips,
+   and a post view that pairs a phone-sized clip with the story, a counter and the sources. Dark by design. */
+:root {
+  --ink: #120e0b;        /* the videos' warm near-black */
+  --ink-2: #1c1612;      /* raised surfaces */
+  --line: #3a2f27;       /* hairlines */
+  --cream: #ece2cd;      /* primary type */
+  --dust: #b9ab95;       /* secondary type */
+  --amber: #ffb43c;      /* keywords, counters */
+  --red: #d73c2d;        /* stamps, tags, the wordmark bar */
+  --display: "Anton", "Impact", "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  --label: "Oswald", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --type: "Special Elite", "Courier New", Courier, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--ink); color: var(--cream);
+  font: 400 17px/1.6 var(--label);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+  overflow-x: hidden;
+}
+body::after { /* film grain + vignette, like the videos' grade */
+  content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 50;
+  background:
+    radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.55) 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 .9 0 0 0 0 .8 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.wrap { max-width: 1180px; margin: 0 auto; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
+.amber { color: var(--amber); }
+
+/* masthead */
+.mast { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 32px; padding-block: 36px 20px; }
+.brand { text-decoration: none; display: inline-flex; flex-direction: column; }
+.wordmark { font: 400 clamp(64px, 12vw, 132px)/.9 var(--display); letter-spacing: .01em; color: var(--cream); }
+.wordmark-bar { height: 10px; width: 72%; background: var(--red); margin-top: 6px; }
+.tagline { font: 400 clamp(15px, 2vw, 19px)/1.4 var(--type); color: var(--dust); max-width: 30ch; }
+.tagline b { color: var(--cream); font-weight: 400; }
+
+/* stat ticker */
+.ticker { border-block: 2px solid var(--line); overflow: hidden; white-space: nowrap; margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); }
+.ticker-track { display: inline-flex; gap: 40px; padding: 10px 0; animation: tick 60s linear infinite; font: 500 15px/1 var(--label); letter-spacing: .08em; text-transform: uppercase; color: var(--dust); }
+.ticker-track span b { color: var(--amber); font-weight: 700; }
+@keyframes tick { to { transform: translateX(-50%); } }
+
+/* filters */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; padding-block: 22px 18px; }
+.chip { font: 500 14px/1 var(--label); letter-spacing: .08em; text-transform: uppercase; color: var(--dust); background: transparent; border: 2px solid var(--line); border-radius: 6px; padding: 9px 12px; cursor: pointer; }
+.chip[aria-pressed="true"] { color: var(--ink); background: var(--amber); border-color: var(--amber); }
+.chip:hover { border-color: var(--dust); }
+.count { font: 400 14px/1 var(--type); color: var(--dust); align-self: center; margin-left: auto; }
+
+/* card wall */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 18px; }
+.card { position: relative; display: block; text-decoration: none; border-radius: 10px; overflow: hidden; background: var(--ink-2); aspect-ratio: 9 / 16; max-width: 100%; isolation: isolate; }
+.card video, .card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.card::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(18,14,11,0) 38%, rgba(18,14,11,.9) 56%, var(--ink) 66%); }
+.card-body { position: absolute; inset: auto 0 0 0; padding: 14px; display: grid; gap: 6px; }
+.card-stat { font: 400 clamp(26px, 3.2vw, 34px)/1 var(--display); color: var(--amber); }
+.card-title { font: 400 21px/1.08 var(--display); letter-spacing: .01em; text-wrap: balance; }
+.card-meta { font: 400 13px/1 var(--type); color: var(--dust); }
+.tag { justify-self: start; font: 500 11px/1.2 var(--label); letter-spacing: .1em; text-transform: uppercase; color: var(--cream); background: rgba(18,14,11,.78); border: 2px solid var(--red); border-radius: 6px; padding: 5px 7px; width: max-content; max-width: 100%; }
+.card:hover .card-title, .card:focus-visible .card-title { color: var(--amber); }
+.card { transition: transform .2s ease; }
+.card:hover { transform: translateY(-4px) rotate(-.4deg); }
+
+/* post view */
+.back { display: inline-flex; gap: 8px; align-items: center; font: 500 14px/1 var(--label); letter-spacing: .1em; text-transform: uppercase; text-decoration: none; color: var(--dust); padding-block: 22px; }
+.back:hover { color: var(--amber); }
+.post { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 40px; align-items: start; }
+.phone { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); border-radius: 22px; overflow: hidden; border: 3px solid var(--line); aspect-ratio: 9 / 16; max-width: 100%; background: var(--ink-2); }
+.phone video, .phone img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.post-main { min-width: 0; display: grid; gap: 22px; }
+.post-tag { position: static; }
+.post h1 { font: 400 clamp(40px, 6vw, 72px)/.98 var(--display); letter-spacing: .005em; margin: 0; text-wrap: balance; }
+.post .dateline { font: 400 16px/1.3 var(--type); color: var(--dust); }
+.stat { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; border-block: 2px solid var(--line); padding-block: 14px; }
+.stat-n { font: 400 clamp(52px, 9vw, 96px)/1 var(--display); color: var(--amber); font-variant-numeric: tabular-nums; }
+.stat-l { font: 500 15px/1.3 var(--label); letter-spacing: .1em; text-transform: uppercase; color: var(--cream); max-width: 22ch; }
+.lede { font: 500 clamp(20px, 2.4vw, 24px)/1.45 var(--label); margin: 0; max-width: 34em; }
+.body p { margin: 0 0 1em; max-width: 36em; color: var(--cream); }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn { font: 500 15px/1 var(--label); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; padding: 14px 16px; border-radius: 8px; border: 2px solid var(--amber); color: var(--ink); background: var(--amber); }
+.btn.ghost { background: transparent; color: var(--amber); }
+.btn:hover { filter: brightness(1.08); }
+.checked { border: 2px dashed var(--line); border-radius: 10px; padding: 16px 18px; display: grid; gap: 8px; }
+.checked h2, .sources h2 { font: 500 13px/1 var(--label); letter-spacing: .14em; text-transform: uppercase; color: var(--red); margin: 0; }
+.checked ul, .sources ul { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; color: var(--dust); font-size: 15px; }
+.sources a { color: var(--dust); text-underline-offset: 3px; }
+.sources a:hover { color: var(--amber); }
+.pager { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; border-top: 2px solid var(--line); padding-top: 18px; }
+.pager a { text-decoration: none; display: grid; gap: 4px; max-width: 48%; min-width: 0; }
+.pager a.next { text-align: right; margin-left: auto; }
+.pager small { font: 500 12px/1 var(--label); letter-spacing: .12em; text-transform: uppercase; color: var(--dust); }
+.pager span { font: 400 20px/1.1 var(--display); }
+.pager a:hover span { color: var(--amber); }
+.foot { margin-top: 48px; padding-top: 20px; border-top: 2px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; font: 400 14px/1.5 var(--type); color: var(--dust); }
+
+@media (max-width: 760px) {
+  .post { grid-template-columns: 1fr; gap: 24px; }
+  .phone { position: static; max-width: 300px; margin-inline: auto; width: 100%; }
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .card-title { font-size: 17px; }
+  .card-stat { font-size: 24px; }
+  .tag { font-size: 10px; }
+  .count { margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track { animation: none; }
+  .card, .card:hover { transition: none; transform: none; }
+}
+</style>
+
+<div class="wrap">
+  <header class="mast">
+    <a class="brand" href="#" aria-label="NO WAY. home">
+      <span class="wordmark">NO WAY.</span>
+      <span class="wordmark-bar" aria-hidden="true"></span>
+    </a>
+    <p class="tagline">True stories that sound made up. <b>Every frame and every sound built in code.</b> Every fact sourced.</p>
+  </header>
+  <div class="ticker" aria-hidden="true"><div class="ticker-track" id="ticker"></div></div>
+  <main id="app"></main>
+  <footer class="foot">
+    <span>NO WAY. Shorts: 1080×1920, coded animation, Kokoro narration, original synthesized sound.</span>
+    <span>Watch links open the full video on GitHub.</span>
+  </footer>
+</div>
+
+<script>
+const REPO = "https://github.com/Chainluv/oddly-true/blob/claude/molasses-flood-shorts-qnqvbt/";
+const WIKI = "https://en.wikipedia.org/wiki/";
+
+// One post per topic, in the order the videos were made. *word* marks an amber keyword in titles.
+const POSTS = [
+  { slug: "molasses-flood", kind: "History", year: "1919", title: "Boston was hit by a *wave of molasses*",
+    video: "molasses-flood/no-way-molasses-flood.mp4", long: "molasses-long/no-way-molasses-flood-long.mp4",
+    stat: { n: 21, label: "people killed" },
+    dateline: "Boston's North End · January 15, 1919",
+    lede: "A giant storage tank full of molasses burst on a winter afternoon and sent a brown wave through the streets of Boston's North End.",
+    body: [
+      "The tank stood by the waterfront, riveted steel holding millions of gallons of molasses. When it failed, the wave knocked buildings off their foundations, bent the elevated railway and trapped people and horses in a flood that thickened as it cooled.",
+      "Rescuers spent hours cutting through debris. One victim wasn't found for nearly four months. The company first blamed anarchists. A later court case found the tank had been built too thin and too brittle, and never properly tested.",
+      "The long version goes chapter by chapter: the tank, the perfect storm, the wave, the trap, the cleanup and the blame game."
+    ],
+    checked: ["21 people died; the long version names the two ten-year-old victims and the firehouse rescue.", "We replaced an unsourced ladder anecdote in the original script with the documented firehouse rescue."],
+    sources: [["Great Molasses Flood (Wikipedia)", WIKI + "Great_Molasses_Flood"]] },
+  { slug: "zanzibar-war", kind: "History", year: "1896", title: "The war that lasted *less than an hour*",
+    video: "zanzibar-war/no-way-03-shortest-war.mp4",
+    stat: { n: 60, prefix: "<", label: "minutes of war" },
+    dateline: "Zanzibar · August 27, 1896",
+    lede: "Britain and Zanzibar went to war on a summer morning. It was over before most people finished breakfast.",
+    body: [
+      "After a succession dispute in Zanzibar, British warships delivered an ultimatum. When it ran out, they opened fire on the palace.",
+      "The bombardment ended the war in well under an hour. It's usually called the shortest war in recorded history.",
+      "The video says \"less than an hour\" and shows no minute counter, because sources give slightly different exact times."
+    ],
+    checked: ["The exact length varies by account, so the video avoids a precise minute figure."],
+    sources: [["Anglo-Zanzibar War (Wikipedia)", WIKI + "Anglo-Zanzibar_War"]] },
+  { slug: "newton-bubble", kind: "History", year: "1720", title: "Even *Isaac Newton* got burned",
+    video: "newton-bubble/no-way-04-newton-burned.mp4",
+    stat: { n: 1720, plain: true, label: "the South Sea Bubble" },
+    dateline: "London · 1720",
+    lede: "The man who explained gravity couldn't explain his way out of a stock bubble.",
+    body: [
+      "In 1720, shares in the South Sea Company soared. Newton bought in early and made money.",
+      "Then, as the price kept climbing, he bought back in near the top. When the bubble burst, he took heavy losses.",
+      "The chart in the video is labeled illustrative. It shows no prices, percentages or loss amounts, because the exact figures are debated."
+    ],
+    checked: ["No dollar or pound figures are given for Newton's loss; accounts differ."],
+    sources: [["South Sea Company (Wikipedia)", WIKI + "South_Sea_Company"]] },
+  { slug: "oil-negative", kind: "History", year: "2020", title: "Oil got so cheap, *sellers paid buyers*",
+    video: "oil-negative/no-way-05-negative-oil.mp4",
+    stat: { n: -37.63, money: true, decimals: 2, label: "per barrel" },
+    dateline: "New York · April 20, 2020",
+    lede: "For one day, owning oil was so bad that people paid to get rid of it.",
+    body: [
+      "In spring 2020, lockdowns emptied the roads and demand for fuel collapsed. Storage was running low.",
+      "On April 20, the expiring May 2020 WTI crude futures contract settled at minus $37.63 a barrel. Holders of that contract had to pay someone to take the oil off their hands.",
+      "That was one contract on one day. It doesn't mean all oil or pump prices went negative."
+    ],
+    checked: ["The figure applies only to the expiring May 2020 WTI futures contract.", "The storage scene shows space running low, not every tank full."],
+    sources: [] },
+  { slug: "rap-grammy", kind: "History", year: "1989", title: "They won the first rap Grammy, then *boycotted the show*",
+    video: "rap-grammy/no-way-06-rap-grammy.mp4",
+    stat: { n: 1989, plain: true, label: "first Best Rap Performance" },
+    dateline: "Los Angeles · 1989",
+    lede: "The first Grammy for rap went to a duo who weren't in the room.",
+    body: [
+      "DJ Jazzy Jeff & The Fresh Prince won the first Best Rap Performance Grammy for \"Parents Just Don't Understand.\"",
+      "The award was left out of the TV broadcast, so they joined a boycott and stayed home. They still got the Grammy.",
+      "The Fresh Prince was Will Smith."
+    ],
+    checked: ["The silhouettes are generic; there's no archival footage and no invented dialogue.", "The beat is original, with nothing sampled from the song."],
+    sources: [["Parents Just Don't Understand (Wikipedia)", WIKI + "Parents_Just_Don%27t_Understand"]] },
+  { slug: "eiffel-con", kind: "History", year: "1925", title: "He sold the Eiffel Tower. *He didn't own it.*",
+    video: "eiffel-con/no-way-07-eiffel-con.mp4",
+    stat: { n: 1925, plain: true, label: "the year of the con" },
+    dateline: "Paris · 1925",
+    lede: "Victor Lustig posed as a government official and sold a scrap dealer the right to tear down the Eiffel Tower.",
+    body: [
+      "Lustig convinced André Poisson that the city wanted to scrap the tower and that he could buy the rights. Poisson paid.",
+      "No ownership changed hands and the tower stayed up. By the usual account, Poisson was too embarrassed to report it.",
+      "Lustig came back to try again. The second attempt went less well."
+    ],
+    checked: ["All paperwork in the video is a stylized reconstruction, with no price, quotation or archival document."],
+    sources: [["Victor Lustig (Wikipedia)", WIKI + "Victor_Lustig"]] },
+  { slug: "bonus-army", kind: "History", year: "1932", title: "America sent troops against *its own veterans*",
+    video: "bonus-army/no-way-bonus-army.mp4",
+    stat: { n: 1945, plain: true, label: "when their bonus was due" },
+    dateline: "Washington, D.C. · July 28, 1932",
+    lede: "Thousands of World War I veterans came to Washington during the Depression to ask for a bonus early. The Army drove them out.",
+    body: [
+      "The \"Bonus Army\" held certificates that weren't payable until 1945. The House passed early payment and the Senate rejected it.",
+      "On July 28, after a deadly clash with police, federal troops cleared the camps with tear gas, and the shelters burned.",
+      "In 1936, Congress authorized early payment over President Roosevelt's veto."
+    ],
+    checked: ["Documents are labeled as illustrative reconstructions.", "No casualty counts, quotations or invented headlines."],
+    sources: [["Bonus Army (Wikipedia)", WIKI + "Bonus_Army"]] },
+  { slug: "gunther-1059", kind: "History", year: "1918", title: "He died *one minute* before the ceasefire",
+    video: "gunther-1059/no-way-gunther-1059.mp4",
+    stat: { text: "10:59", label: "a.m., November 11, 1918" },
+    dateline: "Western Front · November 11, 1918",
+    lede: "The war was set to stop at 11 a.m. Henry Gunther was killed at 10:59.",
+    body: [
+      "The armistice signed that morning ended the fighting on the Western Front at 11 a.m.",
+      "Henry Gunther, an American soldier from Baltimore, was killed in France one minute before.",
+      "He is generally recognized as the last American soldier killed in action in World War I. The video is restrained: no gunshot, and a few seconds of silence at 11:00."
+    ],
+    checked: ["The map and document are labeled reconstructions, with no signing times, casualty totals or quotations."],
+    sources: [["Henry Gunther (Wikipedia)", WIKI + "Henry_Gunther"]] },
+  { slug: "nasa-selfie", kind: "History", year: "1990s", title: "Your selfie camera has a *NASA origin story*",
+    video: "nasa-selfie/no-way-nasa-selfie.mp4",
+    stat: { text: "1 CHIP", label: "a camera on a chip" },
+    dateline: "NASA JPL · early 1990s",
+    lede: "The tiny camera in your phone traces back to a sensor built for spacecraft.",
+    body: [
+      "In the early 1990s, Eric Fossum's team at NASA's Jet Propulsion Laboratory developed the CMOS active-pixel image sensor: a camera on a chip, small and power-efficient enough for spacecraft.",
+      "The technology moved into commercial products and helped make phone cameras practical.",
+      "NASA didn't invent the digital camera or the smartphone. The rest of your phone comes from many other inventions."
+    ],
+    checked: ["The power-use meter in the video is labeled \"conceptual animation, not measured data\"."],
+    sources: [["Active-pixel sensor (Wikipedia)", WIKI + "Active-pixel_sensor"]] },
+  { slug: "tesla-name", kind: "History", year: "2003", title: "Why Tesla is called Tesla, and *who actually named it*",
+    video: "tesla-name/no-way-tesla-name.mp4", long: "tesla-long/no-way-tesla-long.mp4",
+    stat: { n: 2003, plain: true, label: "the name came first" },
+    dateline: "California · 2003",
+    lede: "Elon Musk didn't name Tesla. The name came before he joined.",
+    body: [
+      "Martin Eberhard and Marc Tarpenning founded Tesla Motors in 2003, and Eberhard is credited with proposing the name. Musk joined in 2004 as a major investor and is also recognized as a co-founder.",
+      "The name honors Nikola Tesla, a pioneer of AC power systems and the induction motor. The original Roadster ran on an AC induction motor.",
+      "The long version tells the rest: the man who died broke in room 3327, the War of the Currents, and how his name came back on a car."
+    ],
+    checked: ["The Edison $50,000 bonus story comes from Tesla's own account and is presented that way in the long version.", "\"Tore up a billion-dollar contract\" is treated as a myth."],
+    sources: [["Tesla, Inc. (Wikipedia)", WIKI + "Tesla,_Inc."], ["Nikola Tesla (Wikipedia)", WIKI + "Nikola_Tesla"]] },
+  { slug: "beer-flood", kind: "History", year: "1814", title: "London was flooded with beer. *Eight people died.*",
+    video: "beer-flood/no-way-beer-flood.mp4",
+    stat: { n: 323000, prefix: "UP TO ", label: "imperial gallons" },
+    dateline: "St Giles, London · October 17, 1814",
+    lede: "A 22-foot vat of porter burst at a London brewery and set off a chain reaction.",
+    body: [
+      "At the Horse Shoe Brewery, a hooped wooden vat failed and the escaping porter broke other containers. Estimates run up to 323,000 imperial gallons, an upper estimate.",
+      "A wave reported at about 15 feet hit the crowded St Giles neighbourhood. Buildings were damaged and homes flooded.",
+      "Eight people died. The video opens in disbelief and turns sober."
+    ],
+    checked: ["323,000 gallons is an upper estimate and is labeled that way.", "The 15-foot wave is the reported height."],
+    sources: [["London Beer Flood (Wikipedia)", WIKI + "London_Beer_Flood"]] },
+  { slug: "arkhipov", kind: "History", year: "1962", title: "*One man* stopped a nuclear war",
+    video: "arkhipov/no-way-arkhipov.mp4",
+    stat: { text: "1 OF 3", label: "officers said no" },
+    dateline: "Off Cuba · October 27, 1962",
+    lede: "During the Cuban Missile Crisis, a Soviet submarine came close to firing a nuclear torpedo.",
+    body: [
+      "U.S. Navy ships dropped practice depth charges to signal the hiding submarine B-59 to surface. The crew had lost contact with Moscow, and the captain feared war had started.",
+      "He wanted to launch the nuclear torpedo. On that boat, launch needed three senior officers to agree. Two were ready. Vasili Arkhipov refused.",
+      "The sub surfaced. The Americans didn't know it was carrying a nuclear weapon."
+    ],
+    checked: ["The vote comes from later crew accounts, and the video labels it \"per later crew accounts\".", "The depth charges were practice charges, meant as signals."],
+    sources: [["Vasily Arkhipov (Wikipedia)", WIKI + "Vasily_Arkhipov"]] },
+  { slug: "bitcoin-overflow", kind: "History", year: "2010", title: "Someone created *184 billion Bitcoin*",
+    video: "bitcoin-overflow/no-way-bitcoin-overflow.mp4",
+    stat: { n: 184467440737, label: "BTC in one transaction" },
+    dateline: "Block 74638 · August 15, 2010",
+    lede: "Only 21 million Bitcoin can ever exist. One transaction made nearly 9,000 times that.",
+    body: [
+      "Someone found a bug in Bitcoin's code. Two outputs of about 92 billion BTC each were so large that the sum overflowed, so the safety check passed.",
+      "A patched client, version 0.3.10, came out in about five hours. The patched chain overtook the bad one at block 74691 and the fake coins were erased.",
+      "Who did it is still unknown."
+    ],
+    checked: ["The on-screen code is a simplified reconstruction, not the original source.", "184.47 billion ÷ 21 million ≈ 8,784."],
+    sources: [["Bitcoin Wiki: value overflow incident", "https://en.bitcoin.it/wiki/CVE-2010-5139"], ["Decrypt", "https://decrypt.co/39750/184-billion-bitcoin-anonymous-creator"]] },
+  { slug: "huang-comeback", kind: "News", year: "Nov 16, 2026", title: "He quit. *Now a comeback?*",
+    video: "huang-comeback/no-way-huang-comeback.mp4",
+    stat: { n: 177000, prefix: "~", label: "petition signatures, self-reported" },
+    dateline: "Reported November 16, 2026",
+    lede: "Jensen Huang resigned from Nvidia after 33 years. Days later came reports he'd discussed a return.",
+    body: [
+      "Nvidia announced on November 12 that Huang had resigned from the company he co-founded in 1993. CFO Colette Kress became interim CEO while the board searched and an independent investigation ran.",
+      "The Financial Times reported that he had discussed a return with people close to him. Nvidia and Huang declined to comment, and no comeback had been announced.",
+      "A petition to reinstate him passed about 177,000 signatures. The petition site says names are self-reported and unverified."
+    ],
+    checked: ["The return is labeled \"reported\" and attributed to the Financial Times.", "Facts are as reported on November 16, 2026."],
+    sources: [] },
+  { slug: "anthropic-ipo", kind: "News", year: "Nov 19, 2026", title: "The *$1.5 trillion* breakup",
+    video: "anthropic-ipo/no-way-anthropic-ipo.mp4",
+    stat: { n: 83, money: true, label: "IPO price per share" },
+    dateline: "Nasdaq: ANT · November 19, 2026",
+    lede: "The biggest IPO on record started when two siblings left OpenAI.",
+    body: [
+      "Dario and Daniela Amodei left OpenAI in late 2020 and co-founded Anthropic in 2021. An early investor was FTX, which later collapsed; Amazon and Google later invested billions.",
+      "Anthropic priced its IPO at $83 a share, about $1.5 trillion fully diluted at that price, and began trading on Nasdaq as ANT on November 19, 2026. It closed its first day around $1.76 trillion.",
+      "The twist: its seven co-founders kept 50.1% of the general vote through a Founder LLC, while a Long-Term Benefit Trust elects most of the board."
+    ],
+    checked: ["The script's \"left in 2021\" was corrected to late 2020.", "\"$1.5 trillion\" is labeled as the valuation at the IPO price."],
+    sources: [["CNBC: IPO pricing", "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"], ["CNBC: founder voting control", "https://www.cnbc.com/2026/10/26/anthropic-ipo-founder-voting-control.html"], ["CNN: first day", "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo"]] },
+  { slug: "gta6-launch", kind: "News", year: "Nov 19, 2026", title: "GTA 6's *$3.79 billion* day",
+    video: "gta6-launch/no-way-gta6-launch.mp4",
+    stat: { n: 3.79, money: true, decimals: 2, suffix: "B", label: "day-one sales, per Take-Two" },
+    dateline: "Launch day · November 19, 2026",
+    lede: "Thirteen years after GTA V, the sequel made more in a day than any entertainment launch before it.",
+    body: [
+      "Grand Theft Auto VI launched after delays from 2025 to May 2026 to November 19, 2026. Take-Two says it sold 32.5 million copies before release.",
+      "Take-Two reports $3.79 billion in day-one retail sales, including pre-orders, which it calls a record for any entertainment launch. GTA V made about $800 million on its first day in 2013.",
+      "Sensor Tower's independent estimate is lower, about $2.36 billion. Even that is roughly triple GTA V."
+    ],
+    checked: ["$3.79B is Take-Two's own figure and includes pre-orders.", "No game art, logos or screenshots appear in the video."],
+    sources: [["Take-Two press release", "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records"], ["ABC News", "https://abcnews.com/GMA/Culture/grand-theft-auto-vi-breaks-1st-day-sales-record/story?id=138328412"]] },
+  { slug: "black-tom", kind: "History", series: "America's Forgotten Attacks #1", year: "1916", title: "The day Germany *bombed New Jersey*",
+    video: "black-tom/no-way-black-tom.mp4",
+    stat: { n: 2000000, label: "pounds of ammunition" },
+    dateline: "Black Tom Island, Jersey City · 2:08 a.m., July 30, 1916",
+    lede: "This is why you can't go up the Statue of Liberty's torch.",
+    body: [
+      "German saboteurs blew up the munitions depot on Black Tom Island, right next to the Statue of Liberty. About two million pounds of ammunition went up at once.",
+      "The blast was felt in Philadelphia and broke windows up to 25 miles away, like a magnitude-5 earthquake. America wasn't even in the war yet.",
+      "Shrapnel hit Lady Liberty and damaged the torch arm. The torch has been closed to the public ever since. Germany was found responsible in 1939, and the last payment came in 1979."
+    ],
+    checked: ["Most sources give 1979 for the last payment; the Council on Foreign Relations says 1978.", "A Maryland detail in the original idea was dropped for weak sourcing."],
+    sources: [["Wikipedia: Black Tom explosion", WIKI + "Black_Tom_explosion"], ["NPS: Black Tom", "https://www.nps.gov/articles/black-tom-wwi.htm"], ["NYPL blog", "https://web.nypl.org/blog/2015/07/30/black-tom-island-explosion"], ["Full source list", REPO + "black-tom/sources.md"]] },
+  { slug: "levee-scott", kind: "History", series: "Petty Crimes, Massive Damage #1", year: "1993", title: "He flooded a town to *keep his wife away?*",
+    video: "levee-scott/no-way-levee-scott.mp4",
+    stat: { n: 14000, label: "acres flooded" },
+    dateline: "West Quincy, Missouri · July 16, 1993",
+    lede: "James Scott was convicted of breaking a Mississippi River levee during the 1993 flood. Witnesses say he wanted to strand his wife on the other side.",
+    body: [
+      "Scott, 23, helped sandbag the West Quincy levee. When it broke on July 16, about 14,000 acres flooded and the bridge to Quincy closed for 71 days.",
+      "A police sergeant got suspicious after Scott talked on TV about moving sandbags. Witnesses say he bragged he'd break the levee to strand his wife across the river so he could party. He got a life sentence; it was overturned, and he was convicted again.",
+      "His defense says the levee could have failed on its own, like more than a thousand others that summer. He still denies it, and Missouri prisons say he's scheduled for release in July 2028. Guilty?"
+    ],
+    checked: ["His guilt is disputed, so the motive is always attributed to witnesses.", "An unsourced \"every bridge for 200 miles\" line was replaced with the 71-day bridge closure."],
+    sources: [["Wikipedia: James Scott", WIKI + "James_Scott_(criminal)"], ["Muddy River News: 2028 release", "https://muddyrivernews.com/top-stories/james-scott-convicted-of-sabotaging-west-quincy-missouri-levee-in-1993-is-scheduled-for-release-in-july-of-2028-says-missouri-doc/20260804192316/"], ["Full source list", REPO + "levee-scott/sources.md"]] }
+];
+
+const FILTERS = ["All", "History", "News", "Series"];
+let filter = "All";
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const marked = s => esc(s).replace(/\*(.+?)\*/g, '<span class="amber">$1</span>');
+const plain = s => s.replace(/\*/g, "");
+
+function fmt(st, v) {
+  if (st.text) return st.text;
+  const d = st.decimals || 0;
+  let s = st.plain ? Math.round(v).toString() : Math.abs(v).toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
+  if (st.money) s = (v < 0 ? "−$" : "$") + s;
+  else if (v < 0) s = "−" + s;
+  return (st.prefix || "") + s + (st.suffix || "");
+}
+
+function countUp(el, st) {
+  if (st.text || reduce) { el.textContent = fmt(st, st.n); return; }
+  const t0 = performance.now(), dur = 1300;
+  const from = st.plain ? Math.max(0, st.n - 60) : 0;
+  const step = now => {
+    const k = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+    el.textContent = fmt(st, from + (st.n - from) * e);
+    if (k < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+function media(p, cls) {
+  return `<video class="${cls || ""}" src="media/${p.slug}.mp4" poster="media/${p.slug}.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>`;
+}
+
+function tagFor(p) { return p.series || (p.kind === "News" ? "NO WAY. News" : "NO WAY. History"); }
+
+function renderHome() {
+  const list = POSTS.filter(p => filter === "All" || (filter === "Series" ? p.series : p.kind === filter));
+  $("#app").innerHTML = `
+    <div class="filters" role="group" aria-label="Filter posts">
+      ${FILTERS.map(f => `<button class="chip" type="button" id="f-${f}" aria-pressed="${f === filter}">${f}</button>`).join("")}
+      <span class="count">${list.length} ${list.length === 1 ? "story" : "stories"}</span>
+    </div>
+    <div class="grid">
+      ${list.slice().reverse().map(p => `
+        <a class="card" href="#${p.slug}" aria-label="${esc(plain(p.title))}">
+          ${media(p)}
+          <span class="card-body">
+            <span class="tag">${esc(tagFor(p))}</span>
+            <span class="card-stat">${esc(fmt(p.stat, p.stat.n ?? 0))}</span>
+            <span class="card-title">${marked(p.title)}</span>
+            <span class="card-meta">${esc(p.year)}</span>
+          </span>
+        </a>`).join("")}
+    </div>`;
+  FILTERS.forEach(f => $("#f-" + f).addEventListener("click", () => { filter = f; renderHome(); }));
+  wireVideos();
+}
+
+function renderPost(p) {
+  const i = POSTS.indexOf(p), prev = POSTS[i - 1], next = POSTS[i + 1];
+  $("#app").innerHTML = `
+    <a class="back" href="#">← All stories</a>
+    <article class="post">
+      <div class="phone">${media(p, "hero")}</div>
+      <div class="post-main">
+        <span class="tag post-tag">${esc(tagFor(p))}</span>
+        <h1>${marked(p.title)}</h1>
+        <div class="dateline">${esc(p.dateline)}</div>
+        <div class="stat"><span class="stat-n" id="stat">${esc(fmt(p.stat, p.stat.n ?? 0))}</span><span class="stat-l">${esc(p.stat.label)}</span></div>
+        <p class="lede">${esc(p.lede)}</p>
+        <div class="body">${p.body.map(b => `<p>${esc(b)}</p>`).join("")}</div>
+        <div class="actions">
+          <a class="btn" href="${REPO + p.video}" target="_blank" rel="noopener">Watch the Short ↗</a>
+          ${p.long ? `<a class="btn ghost" href="${REPO + p.long}" target="_blank" rel="noopener">Watch the long version ↗</a>` : ""}
+        </div>
+        <section class="checked"><h2>What we checked</h2><ul>${p.checked.map(c => `<li>${esc(c)}</li>`).join("")}</ul></section>
+        ${p.sources.length ? `<section class="sources"><h2>Sources</h2><ul>${p.sources.map(([t, u]) => `<li><a href="${u}" target="_blank" rel="noopener">${esc(t)}</a></li>`).join("")}</ul></section>` : ""}
+        <nav class="pager" aria-label="More stories">
+          ${prev ? `<a href="#${prev.slug}"><small>← Previous</small><span>${esc(plain(prev.title))}</span></a>` : ""}
+          ${next ? `<a class="next" href="#${next.slug}"><small>Next →</small><span>${esc(plain(next.title))}</span></a>` : ""}
+        </nav>
+      </div>
+    </article>`;
+  countUp($("#stat"), p.stat);
+  wireVideos();
+}
+
+// Muted preview loops play while on screen.
+let io;
+function wireVideos() {
+  if (io) io.disconnect();
+  const vids = document.querySelectorAll("#app video");
+  if (reduce || !("IntersectionObserver" in window)) return;
+  io = new IntersectionObserver(es => es.forEach(e => {
+    const v = e.target;
+    if (e.isIntersecting) { v.preload = "auto"; v.play().catch(() => {}); } else v.pause();
+  }), { threshold: 0.35 });
+  vids.forEach(v => io.observe(v));
+}
+
+function route() {
+  const slug = location.hash.slice(1);
+  const p = POSTS.find(x => x.slug === slug);
+  p ? renderPost(p) : renderHome();
+  if (p) window.scrollTo({ top: 0 });
+}
+
+$("#ticker").innerHTML = [...POSTS, ...POSTS].map(p => `<span><b>${esc(fmt(p.stat, p.stat.n ?? 0))}</b> ${esc(p.stat.label)}</span>`).join("");
+addEventListener("hashchange", route);
+route();
+</script>
